@@ -1,0 +1,27 @@
+{
+  "proposal_id": "1755353044177-cluster-CLUSTER",
+  "kind": "CLUSTER",
+  "source_key": "cluster",
+  "url": "",
+  "proposer_id": "miner-1",
+  "timestamp": 1755353044.1782029,
+  "decided_label": null,
+  "finalized": false,
+  "cluster_hash": "583ec4c1e1a75c26a06c151a61d1578a55515703b9e3263e64c4ab7de3dc9113",
+  "affected_count": 11,
+  "grade_changes": {},
+  "updated_sources": [
+    "btc_binance",
+    "eth_binance",
+    "bnb_binance",
+    "ada_binance",
+    "xrp_binance",
+    "doge_binance",
+    "sol_binance",
+    "trx_binance",
+    "dot_binance",
+    "avax_binance",
+    "virt_A+_0001"
+  ],
+  "k": 5
+}

@@ -1,0 +1,75 @@
+# Oracle Chain Configuration
+# 预言机数据源评估区块链系统配置文件
+
+# 网络配置
+network:
+  timeout_sec: 5.0          # HTTP请求超时时间
+  retries: 3                # 失败重试次数
+  concurrent_requests: 10   # 并发请求数量限制
+
+# 聚类配置
+clustering:
+  k: 5                      # K-means聚类数量
+  algorithm: "kmeans"       # 聚类算法
+  max_iterations: 100       # 最大迭代次数
+  tolerance: 1e-4           # 收敛容差
+  cache_enabled: true       # 是否启用聚类缓存
+  cache_ttl_sec: 300        # 缓存过期时间（秒）
+
+# 评估权重配置
+evaluation:
+  weights:
+    accuracy: 0.30          # 准确度权重
+    availability: 0.15      # 可用性权重  
+    response_time: 0.15     # 响应时间权重
+    volatility: 0.10        # 波动性权重
+    update_frequency: 0.10  # 更新频率权重
+    integrity: 0.10         # 数据完整性权重
+    error_rate: 0.05        # 错误率权重
+    historical: 0.05        # 历史表现权重
+  
+  # 等级阈值
+  grade_thresholds:
+    A_plus: 90.0           # A+ 级别阈值
+    A: 80.0                # A 级别阈值
+    B: 70.0                # B 级别阈值
+    C: 60.0                # C 级别阈值
+    # D: < 60.0            # D 级别（低于C级）
+
+# 挖矿配置
+mining:
+  interval_sec: 60           # 矿工聚类周期（秒）
+  quorum: 3                  # 共识门限
+  cluster_sample_size: 1     # 每次聚类采样数量
+  enable_random_update: false # 是否启用随机UPDATE提案
+
+# 提案配置
+proposal:
+  poll_interval_sec: 2.0     # 提案扫描间隔
+
+# 存储配置
+storage:
+  state_dir: "state"         # 状态文件目录
+  backup_enabled: true       # 是否启用备份
+  backup_interval_sec: 3600  # 备份间隔（秒）
+
+# 日志配置
+logging:
+  level: "INFO"              # 日志级别: DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_enabled: true         # 是否写入日志文件
+  file_path: "logs/oracle.log"
+  console_enabled: true      # 是否输出到控制台
+  max_file_size_mb: 10       # 日志文件最大大小（MB）
+  backup_count: 5            # 保留的日志文件数量
+
+# 虚拟数据源配置
+virtual_sources:
+  count: 1000               # 虚拟数据源数量
+  update_probability: 0.1   # 每次更新虚拟源的概率
+  noise_range: 2.0          # 特征噪音范围（±）
+
+# 性能监控
+performance:
+  enable_metrics: true      # 是否启用性能监控
+  metrics_interval_sec: 30  # 性能指标收集间隔

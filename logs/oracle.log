@@ -1,0 +1,87 @@
+2025-08-16 21:36:18 - clustering - INFO - K-means聚类完成: k=5, 数据点=1100, 耗时=134.81ms
+2025-08-16 21:37:28 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:37:32 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - The read operation timed out
+2025-08-16 21:37:45 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - _ssl.c:1018: The handshake operation timed out
+2025-08-16 21:37:48 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=197.03ms
+2025-08-16 21:37:50 - chain - INFO - 新区块: 高度=0, 哈希=5d2cfc668571
+2025-08-16 21:38:51 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:38:52 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:39:06 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:39:12 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=221.86ms
+2025-08-16 21:39:15 - chain - INFO - 新区块: 高度=1, 哈希=46c937d3a947
+2025-08-16 21:40:19 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
+2025-08-16 21:40:23 - http_client - WARNING - URL错误，重试 2/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
+2025-08-16 21:40:28 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:40:31 - http_client - WARNING - 请求异常，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=ADA - The read operation timed out
+2025-08-16 21:40:33 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:40:38 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=193.97ms
+2025-08-16 21:40:40 - chain - INFO - 新区块: 高度=2, 哈希=1bbcc918d8e0
+2025-08-16 21:41:45 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:41:47 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:41:48 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:41:51 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=472.36ms
+2025-08-16 21:41:54 - chain - INFO - 新区块: 高度=3, 哈希=f7b5610ba7cb
+2025-08-16 21:43:07 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:43:12 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:43:15 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT - _ssl.c:1018: The handshake operation timed out
+2025-08-16 21:43:21 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=409.99ms
+2025-08-16 21:43:24 - chain - INFO - 新区块: 高度=4, 哈希=3bc19a44994e
+2025-08-16 21:44:25 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:44:34 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - The read operation timed out
+2025-08-16 21:44:41 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=395.53ms
+2025-08-16 21:44:43 - chain - INFO - 新区块: 高度=5, 哈希=e8907c41f297
+2025-08-16 21:45:48 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:45:50 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=409.24ms
+2025-08-16 21:45:52 - chain - INFO - 新区块: 高度=6, 哈希=dbcab4e55545
+2025-08-16 21:46:58 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=382.00ms
+2025-08-16 21:47:00 - chain - INFO - 新区块: 高度=7, 哈希=bdad63fc9805
+2025-08-16 21:48:00 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:48:06 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=247.15ms
+2025-08-16 21:48:09 - chain - INFO - 新区块: 高度=8, 哈希=e78f962b18d4
+2025-08-16 21:49:12 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:49:13 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:49:16 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=296.94ms
+2025-08-16 21:49:18 - chain - INFO - 新区块: 高度=9, 哈希=8dae93882431
+2025-08-16 21:50:25 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:50:28 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=196.92ms
+2025-08-16 21:50:30 - chain - INFO - 新区块: 高度=10, 哈希=a9ce0d3f3c30
+2025-08-16 21:51:34 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:51:36 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:51:38 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=457.72ms
+2025-08-16 21:51:40 - chain - INFO - 新区块: 高度=11, 哈希=abbae1b81afc
+2025-08-16 21:52:45 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:52:50 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=144.51ms
+2025-08-16 21:52:51 - chain - INFO - 新区块: 高度=12, 哈希=2fdaddb2e85c
+2025-08-16 21:53:58 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=320.79ms
+2025-08-16 21:54:01 - chain - INFO - 新区块: 高度=13, 哈希=2d890677f640
+2025-08-16 21:55:12 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=185.48ms
+2025-08-16 21:55:13 - chain - INFO - 新区块: 高度=14, 哈希=635104c50a3e
+2025-08-16 21:56:20 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=252.36ms
+2025-08-16 21:56:21 - chain - INFO - 新区块: 高度=15, 哈希=ace924f6f529
+2025-08-16 21:57:25 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
+2025-08-16 21:57:29 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:57:30 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:57:32 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:57:34 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=149.50ms
+2025-08-16 21:57:36 - chain - INFO - 新区块: 高度=16, 哈希=6e837b77adeb
+2025-08-16 21:58:37 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:58:38 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:58:42 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:58:43 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=442.74ms
+2025-08-16 21:58:45 - chain - INFO - 新区块: 高度=17, 哈希=26bc23892986
+2025-08-16 21:59:54 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 21:59:57 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 22:00:01 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=249.53ms
+2025-08-16 22:00:03 - chain - INFO - 新区块: 高度=18, 哈希=42dfb56b1ddb
+2025-08-16 22:01:07 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
+2025-08-16 22:01:16 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT - _ssl.c:1018: The handshake operation timed out
+2025-08-16 22:01:25 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT - The read operation timed out
+2025-08-16 22:01:41 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - _ssl.c:1018: The handshake operation timed out
+2025-08-16 22:01:44 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=193.69ms
+2025-08-16 22:01:47 - chain - INFO - 新区块: 高度=19, 哈希=e61e0f5bfc39
+2025-08-16 22:02:53 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 22:02:55 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=417.87ms
+2025-08-16 22:02:57 - chain - INFO - 新区块: 高度=20, 哈希=6ba5a99eb90c
+2025-08-16 22:04:00 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-16 22:04:04 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=195.91ms
+2025-08-16 22:04:06 - chain - INFO - 新区块: 高度=21, 哈希=9bdd08b071f9
