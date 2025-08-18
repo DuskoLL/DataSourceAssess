@@ -4,14 +4,14 @@
     "created_at": 1755320034.905922,
     "created_by": "generator",
     "features": {
-      "accuracy": 99.64415939814843,
-      "availability": 89.60965340549077,
-      "error_rate": 43.49842570111356,
-      "historical": 77.83664843398029,
-      "integrity": 88.77056893673749,
-      "response_time": 81.96490544405506,
-      "update_frequency": 96.39852513580999,
-      "volatility": 100.0
+      "accuracy": 95.86905971468137,
+      "availability": 91.0717348028612,
+      "error_rate": 48.4287731108525,
+      "historical": 72.87065732904185,
+      "integrity": 92.95200876657589,
+      "response_time": 81.08922521825663,
+      "update_frequency": 98.07737587982822,
+      "volatility": 94.0509648317071
     },
     "label": "A+",
     "score": null
@@ -3753,7 +3753,7 @@
       "update_frequency": 74.2,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_A_0222": {
@@ -3940,7 +3940,7 @@
       "update_frequency": 75.5,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_A_0233": {
@@ -4654,7 +4654,7 @@
       "update_frequency": 74.0,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_A_0275": {
@@ -6065,7 +6065,7 @@
       "update_frequency": 82.3,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_A_0358": {
@@ -6796,7 +6796,7 @@
       "update_frequency": 77.1,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_B_0401": {
@@ -6949,7 +6949,7 @@
       "update_frequency": 79.1,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_B_0410": {
@@ -7136,7 +7136,7 @@
       "update_frequency": 59.1,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0421": {
@@ -7255,7 +7255,7 @@
       "update_frequency": 68.2,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0428": {
@@ -7289,7 +7289,7 @@
       "update_frequency": 72.3,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0430": {
@@ -8224,7 +8224,7 @@
       "update_frequency": 74.7,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_B_0485": {
@@ -8428,7 +8428,7 @@
       "update_frequency": 68.6,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0497": {
@@ -8445,7 +8445,7 @@
       "update_frequency": 60.4,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0498": {
@@ -8870,7 +8870,7 @@
       "update_frequency": 76.4,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_B_0523": {
@@ -9584,7 +9584,7 @@
       "update_frequency": 66.7,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0565": {
@@ -9941,7 +9941,7 @@
       "update_frequency": 76.9,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_B_0586": {
@@ -9992,7 +9992,7 @@
       "update_frequency": 62.4,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0589": {
@@ -10196,7 +10196,7 @@
       "update_frequency": 76.9,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_B_0601": {
@@ -10400,7 +10400,7 @@
       "update_frequency": 66.9,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0613": {
@@ -10468,7 +10468,7 @@
       "update_frequency": 64.3,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0617": {
@@ -10621,7 +10621,7 @@
       "update_frequency": 64.5,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0626": {
@@ -11692,7 +11692,7 @@
       "update_frequency": 77.1,
       "volatility": 100.0
     },
-    "label": "A",
+    "label": "A+",
     "score": null
   },
   "virt_B_0689": {
@@ -11777,7 +11777,7 @@
       "update_frequency": 69.5,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_B_0694": {
@@ -12355,7 +12355,7 @@
       "update_frequency": 74.2,
       "volatility": 100.0
     },
-    "label": "B",
+    "label": "A",
     "score": null
   },
   "virt_C_0728": {
@@ -12542,7 +12542,7 @@
       "update_frequency": 55.5,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_C_0739": {
@@ -12576,7 +12576,7 @@
       "update_frequency": 52.2,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_C_0741": {
@@ -13885,7 +13885,7 @@
       "update_frequency": 64.0,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_C_0818": {
@@ -14293,7 +14293,7 @@
       "update_frequency": 38.1,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_C_0842": {
@@ -14531,7 +14531,7 @@
       "update_frequency": 59.9,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_C_0856": {
@@ -14752,7 +14752,7 @@
       "update_frequency": 44.1,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_C_0869": {
@@ -15415,7 +15415,7 @@
       "update_frequency": 47.0,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_D_0908": {
@@ -16112,7 +16112,7 @@
       "update_frequency": 53.9,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_D_0949": {
@@ -16792,7 +16792,7 @@
       "update_frequency": 54.0,
       "volatility": 100.0
     },
-    "label": "D",
+    "label": "B",
     "score": null
   },
   "virt_D_0989": {

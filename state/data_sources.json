@@ -10,7 +10,7 @@
     "last_price": null,
     "last_latency_ms": 597.2251892089844,
     "last_deviation": 0.00047829150449607495,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_coinbase": {
     "category": "bitcoin_price",
@@ -23,7 +23,7 @@
     "last_price": null,
     "last_latency_ms": 606.9941520690918,
     "last_deviation": 0.0003836733324386428,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_kraken": {
     "category": "bitcoin_price",
@@ -36,7 +36,7 @@
     "last_price": null,
     "last_latency_ms": 758.5608959197998,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_bitstamp": {
     "category": "bitcoin_price",
@@ -44,12 +44,12 @@
     "created_by": "system",
     "type": "custom",
     "url": "https://www.bitstamp.net/api/v2/ticker/btcusd/",
-    "label": "A",
+    "label": "A+",
     "score": 84.85274110034302,
     "last_price": null,
     "last_latency_ms": 839.6401405334473,
     "last_deviation": 0.00042779492685545567,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_okx": {
     "category": "bitcoin_price",
@@ -57,12 +57,12 @@
     "created_by": "system",
     "type": "custom",
     "url": "https://www.okx.com/api/v5/market/ticker?instId=BTC-USDT",
-    "label": "A",
+    "label": "A+",
     "score": 85.6165046452548,
     "last_price": null,
     "last_latency_ms": 586.5621566772461,
     "last_deviation": 0.00041269628237817986,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_bybit": {
     "category": "bitcoin_price",
@@ -75,7 +75,7 @@
     "last_price": null,
     "last_latency_ms": 618.0860996246338,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_gate": {
     "category": "bitcoin_price",
@@ -88,7 +88,7 @@
     "last_price": null,
     "last_latency_ms": 890.3489112854004,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_kucoin": {
     "category": "bitcoin_price",
@@ -101,7 +101,7 @@
     "last_price": null,
     "last_latency_ms": 610.2490425109863,
     "last_deviation": 0.00048315662327209284,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_mexc": {
     "category": "bitcoin_price",
@@ -114,7 +114,7 @@
     "last_price": null,
     "last_latency_ms": 627.094030380249,
     "last_deviation": 0.0005105019460475153,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "btc_coingecko": {
     "category": "bitcoin_price",
@@ -127,7 +127,7 @@
     "last_price": null,
     "last_latency_ms": 491.78123474121094,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_binance": {
     "category": "ethereum_price",
@@ -140,7 +140,7 @@
     "last_price": null,
     "last_latency_ms": 525.1410007476807,
     "last_deviation": 0.00025562482009608683,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_coinbase": {
     "category": "ethereum_price",
@@ -153,7 +153,7 @@
     "last_price": null,
     "last_latency_ms": 490.1161193847656,
     "last_deviation": 0.0006122107035910892,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_kraken": {
     "category": "ethereum_price",
@@ -166,7 +166,7 @@
     "last_price": null,
     "last_latency_ms": 702.5249004364014,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_bitstamp": {
     "category": "ethereum_price",
@@ -179,7 +179,7 @@
     "last_price": null,
     "last_latency_ms": 1083.8520526885986,
     "last_deviation": 0.00043821397730738206,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_okx": {
     "category": "ethereum_price",
@@ -187,12 +187,12 @@
     "created_by": "system",
     "type": "custom",
     "url": "https://www.okx.com/api/v5/market/ticker?instId=ETH-USDT",
-    "label": "A",
+    "label": "A+",
     "score": 86.02386410681325,
     "last_price": null,
     "last_latency_ms": 486.8898391723633,
     "last_deviation": 5.155458556552839e-05,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_bybit": {
     "category": "ethereum_price",
@@ -205,7 +205,7 @@
     "last_price": null,
     "last_latency_ms": 591.5579795837402,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_gate": {
     "category": "ethereum_price",
@@ -218,7 +218,7 @@
     "last_price": null,
     "last_latency_ms": 687.2918605804443,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_kucoin": {
     "category": "ethereum_price",
@@ -226,12 +226,12 @@
     "created_by": "system",
     "type": "custom",
     "url": "https://api.kucoin.com/api/v1/market/orderbook/level1?symbol=ETH-USDT",
-    "label": "A",
+    "label": "A+",
     "score": 85.84798837755723,
     "last_price": null,
     "last_latency_ms": 546.5891361236572,
     "last_deviation": 4.081404690599447e-05,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_mexc": {
     "category": "ethereum_price",
@@ -244,7 +244,7 @@
     "last_price": null,
     "last_latency_ms": 518.6500549316406,
     "last_deviation": 2.7925400514710055e-05,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "eth_coingecko": {
     "category": "ethereum_price",
@@ -257,7 +257,7 @@
     "last_price": null,
     "last_latency_ms": 536.6201400756836,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_binance": {
     "category": "bnb_price",
@@ -270,7 +270,7 @@
     "last_price": null,
     "last_latency_ms": 545.8278656005859,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_bybit": {
     "category": "bnb_price",
@@ -283,7 +283,7 @@
     "last_price": null,
     "last_latency_ms": 492.21086502075195,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_gate": {
     "category": "bnb_price",
@@ -296,7 +296,7 @@
     "last_price": null,
     "last_latency_ms": 688.5449886322021,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_kucoin": {
     "category": "bnb_price",
@@ -309,7 +309,7 @@
     "last_price": null,
     "last_latency_ms": 611.732006072998,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_mexc": {
     "category": "bnb_price",
@@ -322,7 +322,7 @@
     "last_price": null,
     "last_latency_ms": 493.6099052429199,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_huobi": {
     "category": "bnb_price",
@@ -335,7 +335,7 @@
     "last_price": null,
     "last_latency_ms": 596.9400405883789,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_coingecko": {
     "category": "bnb_price",
@@ -348,7 +348,7 @@
     "last_price": null,
     "last_latency_ms": 559.2401027679443,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_crypto_com": {
     "category": "bnb_price",
@@ -361,7 +361,7 @@
     "last_price": null,
     "last_latency_ms": 837.5248908996582,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_bitfinex": {
     "category": "bnb_price",
@@ -374,7 +374,7 @@
     "last_price": null,
     "last_latency_ms": 686.3911151885986,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "bnb_bingx": {
     "category": "bnb_price",
@@ -387,7 +387,7 @@
     "last_price": null,
     "last_latency_ms": 790.6138896942139,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_binance": {
     "category": "cardano_price",
@@ -400,7 +400,7 @@
     "last_price": null,
     "last_latency_ms": 529.8340320587158,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_coinbase": {
     "category": "cardano_price",
@@ -413,7 +413,7 @@
     "last_price": null,
     "last_latency_ms": 727.0340919494629,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_kraken": {
     "category": "cardano_price",
@@ -426,7 +426,7 @@
     "last_price": null,
     "last_latency_ms": 757.8060626983643,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_bitstamp": {
     "category": "cardano_price",
@@ -439,7 +439,7 @@
     "last_price": null,
     "last_latency_ms": 997.5838661193848,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_bybit": {
     "category": "cardano_price",
@@ -452,7 +452,7 @@
     "last_price": null,
     "last_latency_ms": 500.5180835723877,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_gate": {
     "category": "cardano_price",
@@ -465,7 +465,7 @@
     "last_price": null,
     "last_latency_ms": 655.3118228912354,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_kucoin": {
     "category": "cardano_price",
@@ -478,7 +478,7 @@
     "last_price": null,
     "last_latency_ms": 586.8773460388184,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_mexc": {
     "category": "cardano_price",
@@ -491,7 +491,7 @@
     "last_price": null,
     "last_latency_ms": 609.3780994415283,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_okx": {
     "category": "cardano_price",
@@ -504,7 +504,7 @@
     "last_price": null,
     "last_latency_ms": 629.1499137878418,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "ada_coingecko": {
     "category": "cardano_price",
@@ -517,7 +517,7 @@
     "last_price": null,
     "last_latency_ms": 771.0211277008057,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_binance": {
     "category": "xrp_price",
@@ -525,12 +525,12 @@
     "created_by": "system",
     "type": "custom",
     "url": "https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT",
-    "label": "A+",
+    "label": "C",
     "score": 55.84874629974365,
     "last_price": null,
     "last_latency_ms": 550.4179000854492,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_coinbase": {
     "category": "xrp_price",
@@ -543,7 +543,7 @@
     "last_price": null,
     "last_latency_ms": 965.5320644378662,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_kraken": {
     "category": "xrp_price",
@@ -556,7 +556,7 @@
     "last_price": null,
     "last_latency_ms": 917.6230430603027,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_bitstamp": {
     "category": "xrp_price",
@@ -569,7 +569,7 @@
     "last_price": null,
     "last_latency_ms": 543.3700084686279,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_bybit": {
     "category": "xrp_price",
@@ -582,7 +582,7 @@
     "last_price": null,
     "last_latency_ms": 497.4799156188965,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_gate": {
     "category": "xrp_price",
@@ -595,7 +595,7 @@
     "last_price": null,
     "last_latency_ms": 697.303056716919,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_kucoin": {
     "category": "xrp_price",
@@ -608,7 +608,7 @@
     "last_price": null,
     "last_latency_ms": 630.964994430542,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_mexc": {
     "category": "xrp_price",
@@ -621,7 +621,7 @@
     "last_price": null,
     "last_latency_ms": 542.5746440887451,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_okx": {
     "category": "xrp_price",
@@ -634,7 +634,7 @@
     "last_price": null,
     "last_latency_ms": 563.7228488922119,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "xrp_coingecko": {
     "category": "xrp_price",
@@ -647,7 +647,7 @@
     "last_price": null,
     "last_latency_ms": 713.5391235351562,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_binance": {
     "category": "dogecoin_price",
@@ -660,7 +660,7 @@
     "last_price": null,
     "last_latency_ms": 496.8850612640381,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_coinbase": {
     "category": "dogecoin_price",
@@ -673,7 +673,7 @@
     "last_price": null,
     "last_latency_ms": 764.4400596618652,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_kraken": {
     "category": "dogecoin_price",
@@ -686,7 +686,7 @@
     "last_price": null,
     "last_latency_ms": 698.6560821533203,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_bitstamp": {
     "category": "dogecoin_price",
@@ -699,7 +699,7 @@
     "last_price": null,
     "last_latency_ms": 1081.2397003173828,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_bybit": {
     "category": "dogecoin_price",
@@ -712,7 +712,7 @@
     "last_price": null,
     "last_latency_ms": 547.2078323364258,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_gate": {
     "category": "dogecoin_price",
@@ -725,7 +725,7 @@
     "last_price": null,
     "last_latency_ms": 680.1440715789795,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_kucoin": {
     "category": "dogecoin_price",
@@ -738,7 +738,7 @@
     "last_price": null,
     "last_latency_ms": 613.776683807373,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_mexc": {
     "category": "dogecoin_price",
@@ -751,7 +751,7 @@
     "last_price": null,
     "last_latency_ms": 459.22183990478516,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_okx": {
     "category": "dogecoin_price",
@@ -764,7 +764,7 @@
     "last_price": null,
     "last_latency_ms": 463.2987976074219,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "doge_coingecko": {
     "category": "dogecoin_price",
@@ -777,7 +777,7 @@
     "last_price": null,
     "last_latency_ms": 1059.8459243774414,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_binance": {
     "category": "solana_price",
@@ -790,7 +790,7 @@
     "last_price": null,
     "last_latency_ms": 518.9762115478516,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_coinbase": {
     "category": "solana_price",
@@ -803,7 +803,7 @@
     "last_price": null,
     "last_latency_ms": 482.0377826690674,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_kraken": {
     "category": "solana_price",
@@ -816,7 +816,7 @@
     "last_price": null,
     "last_latency_ms": 808.9871406555176,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_bybit": {
     "category": "solana_price",
@@ -829,7 +829,7 @@
     "last_price": null,
     "last_latency_ms": 558.8781833648682,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_gate": {
     "category": "solana_price",
@@ -842,7 +842,7 @@
     "last_price": null,
     "last_latency_ms": 656.1930179595947,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_kucoin": {
     "category": "solana_price",
@@ -855,7 +855,7 @@
     "last_price": null,
     "last_latency_ms": 571.8390941619873,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_mexc": {
     "category": "solana_price",
@@ -868,7 +868,7 @@
     "last_price": null,
     "last_latency_ms": 581.2239646911621,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_okx": {
     "category": "solana_price",
@@ -881,7 +881,7 @@
     "last_price": null,
     "last_latency_ms": 528.6998748779297,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_coingecko": {
     "category": "solana_price",
@@ -894,7 +894,7 @@
     "last_price": null,
     "last_latency_ms": 670.5489158630371,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "sol_huobi": {
     "category": "solana_price",
@@ -907,7 +907,7 @@
     "last_price": null,
     "last_latency_ms": 548.9840507507324,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_binance": {
     "category": "tron_price",
@@ -920,7 +920,7 @@
     "last_price": null,
     "last_latency_ms": 579.4389247894287,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_coinbase": {
     "category": "tron_price",
@@ -933,7 +933,7 @@
     "last_price": null,
     "last_latency_ms": 737.7490997314453,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_kraken": {
     "category": "tron_price",
@@ -946,7 +946,7 @@
     "last_price": null,
     "last_latency_ms": 1131.4690113067627,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_bybit": {
     "category": "tron_price",
@@ -959,7 +959,7 @@
     "last_price": null,
     "last_latency_ms": 498.5477924346924,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_gate": {
     "category": "tron_price",
@@ -972,7 +972,7 @@
     "last_price": null,
     "last_latency_ms": 706.7451477050781,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_kucoin": {
     "category": "tron_price",
@@ -985,7 +985,7 @@
     "last_price": null,
     "last_latency_ms": 566.9360160827637,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_mexc": {
     "category": "tron_price",
@@ -998,7 +998,7 @@
     "last_price": null,
     "last_latency_ms": 546.4227199554443,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_okx": {
     "category": "tron_price",
@@ -1011,7 +1011,7 @@
     "last_price": null,
     "last_latency_ms": 467.573881149292,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_coingecko": {
     "category": "tron_price",
@@ -1024,7 +1024,7 @@
     "last_price": null,
     "last_latency_ms": 549.8030185699463,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "trx_huobi": {
     "category": "tron_price",
@@ -1037,7 +1037,7 @@
     "last_price": null,
     "last_latency_ms": 1181.9427013397217,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_binance": {
     "category": "polkadot_price",
@@ -1050,7 +1050,7 @@
     "last_price": null,
     "last_latency_ms": 552.8707504272461,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_coinbase": {
     "category": "polkadot_price",
@@ -1063,7 +1063,7 @@
     "last_price": null,
     "last_latency_ms": 488.82198333740234,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_kraken": {
     "category": "polkadot_price",
@@ -1076,7 +1076,7 @@
     "last_price": null,
     "last_latency_ms": 1142.8110599517822,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_bybit": {
     "category": "polkadot_price",
@@ -1089,7 +1089,7 @@
     "last_price": null,
     "last_latency_ms": 535.3410243988037,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_gate": {
     "category": "polkadot_price",
@@ -1102,7 +1102,7 @@
     "last_price": null,
     "last_latency_ms": 782.2868824005127,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_kucoin": {
     "category": "polkadot_price",
@@ -1115,7 +1115,7 @@
     "last_price": null,
     "last_latency_ms": 636.1739635467529,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_mexc": {
     "category": "polkadot_price",
@@ -1128,7 +1128,7 @@
     "last_price": null,
     "last_latency_ms": 583.0860137939453,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_okx": {
     "category": "polkadot_price",
@@ -1141,7 +1141,7 @@
     "last_price": null,
     "last_latency_ms": 521.5299129486084,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_coingecko": {
     "category": "polkadot_price",
@@ -1154,7 +1154,7 @@
     "last_price": null,
     "last_latency_ms": 728.9042472839355,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "dot_huobi": {
     "category": "polkadot_price",
@@ -1167,7 +1167,7 @@
     "last_price": null,
     "last_latency_ms": 557.7831268310547,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_binance": {
     "category": "avalanche_price",
@@ -1180,7 +1180,7 @@
     "last_price": null,
     "last_latency_ms": 514.3520832061768,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_coinbase": {
     "category": "avalanche_price",
@@ -1193,7 +1193,7 @@
     "last_price": null,
     "last_latency_ms": 815.7610893249512,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_kraken": {
     "category": "avalanche_price",
@@ -1206,7 +1206,7 @@
     "last_price": null,
     "last_latency_ms": 704.758882522583,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_okx": {
     "category": "avalanche_price",
@@ -1219,7 +1219,7 @@
     "last_price": null,
     "last_latency_ms": 533.1380367279053,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_huobi": {
     "category": "avalanche_price",
@@ -1232,7 +1232,7 @@
     "last_price": null,
     "last_latency_ms": 545.6421375274658,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_kucoin": {
     "category": "avalanche_price",
@@ -1245,7 +1245,7 @@
     "last_price": null,
     "last_latency_ms": 545.2079772949219,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_gate": {
     "category": "avalanche_price",
@@ -1258,7 +1258,7 @@
     "last_price": null,
     "last_latency_ms": 665.4338836669922,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_mexc": {
     "category": "avalanche_price",
@@ -1271,7 +1271,7 @@
     "last_price": null,
     "last_latency_ms": 552.642822265625,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_crypto": {
     "category": "avalanche_price",
@@ -1284,7 +1284,7 @@
     "last_price": null,
     "last_latency_ms": 643.7458992004395,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   },
   "avax_bitfinex": {
     "category": "avalanche_price",
@@ -1297,6 +1297,6 @@
     "last_price": null,
     "last_latency_ms": 770.2591419219971,
     "last_deviation": 1.0,
-    "last_eval_time": 1755353044.176476
+    "last_eval_time": 1755354550.586397
   }
 }
