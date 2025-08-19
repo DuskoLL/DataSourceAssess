@@ -1,0 +1,58 @@
+{
+  "blocks": [
+    {
+      "index": 0,
+      "timestamp": 1755589141.57283,
+      "previous_hash": "genesis",
+      "miner_id": "miner-1",
+      "proposals": [
+        {
+          "proposal_id": "1755588509005-cluster-CLUSTER",
+          "proposer_id": "miner-1",
+          "kind": "CLUSTER",
+          "source_key": "cluster",
+          "timestamp": 1755589141.572823,
+          "decided_label": "A+",
+          "votes": []
+        }
+      ],
+      "block_hash": "603adb744e508238f16f151110249de53c9bb0da7c5843204d6567bd57eae6f7"
+    },
+    {
+      "index": 1,
+      "timestamp": 1755589146.811122,
+      "previous_hash": "603adb744e508238f16f151110249de53c9bb0da7c5843204d6567bd57eae6f7",
+      "miner_id": "miner-1",
+      "proposals": [
+        {
+          "proposal_id": "1755588511096-test_api-ADD",
+          "proposer_id": "miner-1",
+          "kind": "ADD",
+          "source_key": "test_api",
+          "timestamp": 1755589146.811115,
+          "decided_label": "D",
+          "votes": []
+        }
+      ],
+      "block_hash": "d2aee309b65d881ca514e7459bc0b5960492aab2a1abcaaa52546ae586f3284f"
+    },
+    {
+      "index": 2,
+      "timestamp": 1755589266.284369,
+      "previous_hash": "d2aee309b65d881ca514e7459bc0b5960492aab2a1abcaaa52546ae586f3284f",
+      "miner_id": "miner-1",
+      "proposals": [
+        {
+          "proposal_id": "1755589231801-real_time_test-ADD",
+          "proposer_id": "miner-1",
+          "kind": "ADD",
+          "source_key": "real_time_test",
+          "timestamp": 1755589266.284362,
+          "decided_label": "D",
+          "votes": []
+        }
+      ],
+      "block_hash": "9df03c8ca451545f7f86293c38392783fc7207b3140b6c12845e4ed7460b9f81"
+    }
+  ]
+}

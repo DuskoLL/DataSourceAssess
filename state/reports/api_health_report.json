@@ -1,5 +1,5 @@
 {
-  "timestamp": 1755351174.1127622,
+  "timestamp": 1755606553.4199839,
   "overall_success_rate": 100.0,
   "total_successful_tests": 18,
   "total_tests": 18,
@@ -7,120 +7,120 @@
     "bitcoin": [
       {
         "success": true,
-        "price": 117858.46,
-        "latency": 1196.5460777282715,
+        "price": 115536.9,
+        "latency": 868.4983253479004,
         "error": null
       },
       {
         "success": true,
-        "price": 117920.0,
-        "latency": 334.89203453063965,
+        "price": 115537.0,
+        "latency": 878.5238265991211,
         "error": null
       },
       {
         "success": true,
-        "price": 117920.0,
-        "latency": 334.6428871154785,
+        "price": 115537.0,
+        "latency": 1018.8779830932617,
         "error": null
       }
     ],
     "ethereum": [
       {
         "success": true,
-        "price": 4426.24,
-        "latency": 1249.2411136627197,
+        "price": 4309.47,
+        "latency": 1266.1938667297363,
         "error": null
       },
       {
         "success": true,
-        "price": 4431.5,
-        "latency": 1080.3780555725098,
+        "price": 4309.52,
+        "latency": 1601.9771099090576,
         "error": null
       },
       {
         "success": true,
-        "price": 4422.24,
-        "latency": 936.7518424987793,
+        "price": 4312.855,
+        "latency": 1005.3830146789551,
         "error": null
       }
     ],
     "cardano": [
       {
         "success": true,
-        "price": 0.916,
-        "latency": 352.6339530944824,
+        "price": 0.9343,
+        "latency": 1207.1340084075928,
         "error": null
       },
       {
         "success": true,
-        "price": 0.916,
-        "latency": 340.7561779022217,
+        "price": 0.93495,
+        "latency": 1987.5807762145996,
         "error": null
       },
       {
         "success": true,
-        "price": 0.91845,
-        "latency": 713.4151458740234,
+        "price": 0.9341,
+        "latency": 856.8758964538574,
         "error": null
       }
     ],
     "ripple": [
       {
         "success": true,
-        "price": 3.11935,
-        "latency": 670.0387001037598,
+        "price": 3.01915,
+        "latency": 1626.0261535644531,
         "error": null
       },
       {
         "success": true,
-        "price": 3.1166,
-        "latency": 784.9893569946289,
+        "price": 3.0158,
+        "latency": 955.5480480194092,
         "error": null
       },
       {
         "success": true,
-        "price": 3.11935,
-        "latency": 702.3789882659912,
+        "price": 3.0158,
+        "latency": 963.817834854126,
         "error": null
       }
     ],
     "dogecoin": [
       {
         "success": true,
-        "price": 0.22967,
-        "latency": 676.3479709625244,
+        "price": 0.22009,
+        "latency": 16041.856050491333,
         "error": null
       },
       {
         "success": true,
-        "price": 0.22941,
-        "latency": 400.96187591552734,
+        "price": 0.2201,
+        "latency": 1255.6982040405273,
         "error": null
       },
       {
         "success": true,
-        "price": 0.22952,
-        "latency": 1122.377872467041,
+        "price": 0.22014,
+        "latency": 893.0339813232422,
         "error": null
       }
     ],
     "solana": [
       {
         "success": true,
-        "price": 188.21,
-        "latency": 1015.6829357147217,
+        "price": 182.11,
+        "latency": 1440.298080444336,
         "error": null
       },
       {
         "success": true,
-        "price": 188.21,
-        "latency": 379.1227340698242,
+        "price": 182.16,
+        "latency": 2633.7151527404785,
         "error": null
       },
       {
         "success": true,
-        "price": 188.07,
-        "latency": 348.1121063232422,
+        "price": 182.16,
+        "latency": 3060.781955718994,
         "error": null
       }
     ]

@@ -1,0 +1,12 @@
+{
+  "node_id": "proposer-3",
+  "label": "B",
+  "deviation_ratio": 0.3,
+  "price": null,
+  "latency_ms": 480.0,
+  "score": 72.0,
+  "data_fresh_ms": null,
+  "server_ts_ms": null,
+  "features": null,
+  "error": "HTTP 401 Unauthorized"
+}

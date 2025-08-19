@@ -510,6 +510,20 @@ def save_chain_doc(doc: Dict[str, Any]) -> None:
     save_json_file(CHAIN_FILE, doc)
 
 
+def get_latest_chain_block() -> Optional[dict]:
+    from storage import get_storage
+    storage = get_storage()
+    try:
+        doc = storage.load_json("chain.json")
+        if isinstance(doc, dict):
+            blocks = doc.get("blocks", [])
+            if blocks:
+                return blocks[-1]
+        return None
+    except Exception:
+        return None
+
+
 def list_proposal_dirs() -> List[str]:
     """列出提案目录"""
     storage = get_storage()

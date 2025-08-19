@@ -2,759 +2,255 @@
   "blocks": [
     {
       "index": 0,
-      "timestamp": 1755351470.3993511,
+      "timestamp": 1755606681.731945,
       "previous_hash": "genesis",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755351468159-cluster-CLUSTER",
+          "proposal_id": "1755606680480-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755351470.399332,
+          "timestamp": 1755606681.731937,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "5d2cfc6685718e9a9ee39267068174b1f9ed8833ce2fbae6092da06cb9172b9a"
+      "block_hash": "00ce9cecd58034870fe0c2ff7957a5b2d9f0093912faeeb3304ce7d2ba2556ba"
     },
     {
       "index": 1,
-      "timestamp": 1755351555.170717,
-      "previous_hash": "5d2cfc6685718e9a9ee39267068174b1f9ed8833ce2fbae6092da06cb9172b9a",
+      "timestamp": 1755606778.662527,
+      "previous_hash": "00ce9cecd58034870fe0c2ff7957a5b2d9f0093912faeeb3304ce7d2ba2556ba",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755351552915-cluster-CLUSTER",
+          "proposal_id": "1755606776387-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755351555.170706,
+          "timestamp": 1755606778.6625202,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "46c937d3a947908f0aee849ab5cfc16aeaad12dbdc7e480c6e19593358d46932"
+      "block_hash": "e82854af6a9497bcb1388110e6d89929d3fcf475b87bde3de18bbc9798d337cd"
     },
     {
       "index": 2,
-      "timestamp": 1755351640.76827,
-      "previous_hash": "46c937d3a947908f0aee849ab5cfc16aeaad12dbdc7e480c6e19593358d46932",
+      "timestamp": 1755606864.220074,
+      "previous_hash": "e82854af6a9497bcb1388110e6d89929d3fcf475b87bde3de18bbc9798d337cd",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755351638523-cluster-CLUSTER",
+          "proposal_id": "1755606861964-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755351640.7682638,
+          "timestamp": 1755606864.2200692,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "1bbcc918d8e0638a430c8fed48964497dcb365cd1ef02cd231a979f57969791e"
+      "block_hash": "66ed1380f563d7c08da6062004bc54b2e80b9d38e863426f5999e05ae13396ed"
     },
     {
       "index": 3,
-      "timestamp": 1755351714.031312,
-      "previous_hash": "1bbcc918d8e0638a430c8fed48964497dcb365cd1ef02cd231a979f57969791e",
+      "timestamp": 1755606950.4031081,
+      "previous_hash": "66ed1380f563d7c08da6062004bc54b2e80b9d38e863426f5999e05ae13396ed",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755351711787-cluster-CLUSTER",
+          "proposal_id": "1755606948155-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755351714.031307,
+          "timestamp": 1755606950.403096,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "f7b5610ba7cb0b181a9888d132ea7e94f678d62cd4b352c6694b81dcbd6d845c"
+      "block_hash": "3bda06037112573e9a66082d52709fd4ae6b5afa7ba60752c7f8aa21cb877858"
     },
     {
       "index": 4,
-      "timestamp": 1755351804.179036,
-      "previous_hash": "f7b5610ba7cb0b181a9888d132ea7e94f678d62cd4b352c6694b81dcbd6d845c",
+      "timestamp": 1755607035.164889,
+      "previous_hash": "3bda06037112573e9a66082d52709fd4ae6b5afa7ba60752c7f8aa21cb877858",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755351801936-cluster-CLUSTER",
+          "proposal_id": "1755607032900-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755351804.179026,
+          "timestamp": 1755607035.164877,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "3bc19a44994e56066fb12d157a77fc04020b8c0544bcd9c11ddd04f04473e122"
+      "block_hash": "61d90ac10f05c5406cac89f9e184b9979a216d59731298ef9677677858dd182f"
     },
     {
       "index": 5,
-      "timestamp": 1755351883.974674,
-      "previous_hash": "3bc19a44994e56066fb12d157a77fc04020b8c0544bcd9c11ddd04f04473e122",
+      "timestamp": 1755607119.738854,
+      "previous_hash": "61d90ac10f05c5406cac89f9e184b9979a216d59731298ef9677677858dd182f",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755351881728-cluster-CLUSTER",
+          "proposal_id": "1755607117414-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755351883.974664,
+          "timestamp": 1755607119.7388248,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "e8907c41f297b8a7d1148a7be34e213245031d4a004f4f88d896f1548f4df83f"
+      "block_hash": "bf7b7b0727453dcd6de4c450ea1c7098c5bd30309f14f4f6e770db65d01b5296"
     },
     {
       "index": 6,
-      "timestamp": 1755351952.614918,
-      "previous_hash": "e8907c41f297b8a7d1148a7be34e213245031d4a004f4f88d896f1548f4df83f",
+      "timestamp": 1755607207.747882,
+      "previous_hash": "bf7b7b0727453dcd6de4c450ea1c7098c5bd30309f14f4f6e770db65d01b5296",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755351950373-cluster-CLUSTER",
+          "proposal_id": "1755607205495-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755351952.614909,
+          "timestamp": 1755607207.747875,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "dbcab4e55545d509cc589547026646c88f282dcd5fbb0663d1b7547a3f245a66"
+      "block_hash": "f6839cb7e3e7086e31d2342f429639177b652321f1a00c4bbebd16774b0b766e"
     },
     {
       "index": 7,
-      "timestamp": 1755352020.102489,
-      "previous_hash": "dbcab4e55545d509cc589547026646c88f282dcd5fbb0663d1b7547a3f245a66",
+      "timestamp": 1755607293.078071,
+      "previous_hash": "f6839cb7e3e7086e31d2342f429639177b652321f1a00c4bbebd16774b0b766e",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755352018868-cluster-CLUSTER",
+          "proposal_id": "1755607290807-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755352020.10248,
+          "timestamp": 1755607293.0780642,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "bdad63fc98054de85fa123f73058266586b883e7515805fea6664e1beef12343"
+      "block_hash": "0dab866eaec84d4debbeac69d8d679628ac45fc929f328c1d4023a09533c5e30"
     },
     {
       "index": 8,
-      "timestamp": 1755352089.168844,
-      "previous_hash": "bdad63fc98054de85fa123f73058266586b883e7515805fea6664e1beef12343",
+      "timestamp": 1755607392.0725482,
+      "previous_hash": "0dab866eaec84d4debbeac69d8d679628ac45fc929f328c1d4023a09533c5e30",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755352086926-cluster-CLUSTER",
+          "proposal_id": "1755607389811-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755352089.1688352,
+          "timestamp": 1755607392.0725398,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "e78f962b18d45b92c3c587987b19bc449f97899c37c248b70efa5c44366da902"
+      "block_hash": "eeb35720fa87ce4f8ef461d06a3e12dd5a7dd14ae711a3e5fb1bce6d98c76a0b"
     },
     {
       "index": 9,
-      "timestamp": 1755352158.699404,
-      "previous_hash": "e78f962b18d45b92c3c587987b19bc449f97899c37c248b70efa5c44366da902",
+      "timestamp": 1755607477.841689,
+      "previous_hash": "eeb35720fa87ce4f8ef461d06a3e12dd5a7dd14ae711a3e5fb1bce6d98c76a0b",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755352156455-cluster-CLUSTER",
+          "proposal_id": "1755607476556-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755352158.699397,
+          "timestamp": 1755607477.841681,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "8dae9388243188b4c6de93726df7de21848e088ddf9656ef7f348a9393db5157"
+      "block_hash": "b56090876a1359c82f402640f7f1177828c35c0bac63234ba84f3eddfe586b8d"
     },
     {
       "index": 10,
-      "timestamp": 1755352230.9796212,
-      "previous_hash": "8dae9388243188b4c6de93726df7de21848e088ddf9656ef7f348a9393db5157",
+      "timestamp": 1755607592.550347,
+      "previous_hash": "b56090876a1359c82f402640f7f1177828c35c0bac63234ba84f3eddfe586b8d",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755352228742-cluster-CLUSTER",
+          "proposal_id": "1755607591288-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755352230.9796128,
+          "timestamp": 1755607592.5503402,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "a9ce0d3f3c30e8866c87dcba75270819bc69f52ec99223d57c02f2d6fe62f017"
+      "block_hash": "ba819541889ef2cb3a96c145e07d5d316ab374e679d4033ef78b1f96accb9f72"
     },
     {
       "index": 11,
-      "timestamp": 1755352300.6037161,
-      "previous_hash": "a9ce0d3f3c30e8866c87dcba75270819bc69f52ec99223d57c02f2d6fe62f017",
+      "timestamp": 1755607679.250852,
+      "previous_hash": "ba819541889ef2cb3a96c145e07d5d316ab374e679d4033ef78b1f96accb9f72",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755352298360-cluster-CLUSTER",
+          "proposal_id": "1755607676991-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755352300.603703,
+          "timestamp": 1755607679.250844,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "abbae1b81afcb0e53320884157e35aec7fd20ab9b462bdc6e11d4e0fb243f185"
+      "block_hash": "add09cd373be711f79d991a0b7bd3d6b24a9b8c02b01a2b020554712059ff4f3"
     },
     {
       "index": 12,
-      "timestamp": 1755352371.314955,
-      "previous_hash": "abbae1b81afcb0e53320884157e35aec7fd20ab9b462bdc6e11d4e0fb243f185",
+      "timestamp": 1755607764.5109,
+      "previous_hash": "add09cd373be711f79d991a0b7bd3d6b24a9b8c02b01a2b020554712059ff4f3",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755352370079-cluster-CLUSTER",
+          "proposal_id": "1755607762255-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755352371.314948,
+          "timestamp": 1755607764.510879,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "2fdaddb2e85c5b96222b713b34418c5c036c1c3101428000044250b48b988c93"
+      "block_hash": "2f166a258190ec23be9dcc7504e5ba95ee8f486afb0fab1d48426dda60f17a8d"
     },
     {
       "index": 13,
-      "timestamp": 1755352441.1366038,
-      "previous_hash": "2fdaddb2e85c5b96222b713b34418c5c036c1c3101428000044250b48b988c93",
+      "timestamp": 1755608175.4728892,
+      "previous_hash": "2f166a258190ec23be9dcc7504e5ba95ee8f486afb0fab1d48426dda60f17a8d",
       "miner_id": "miner-1",
       "proposals": [
         {
-          "proposal_id": "1755352438893-cluster-CLUSTER",
+          "proposal_id": "1755608173217-cluster-CLUSTER",
           "proposer_id": "miner-1",
           "kind": "CLUSTER",
           "source_key": "cluster",
-          "timestamp": 1755352441.1365938,
+          "timestamp": 1755608175.472862,
           "decided_label": "A+",
           "votes": []
         }
       ],
-      "block_hash": "2d890677f6406b9546028cccd8b542bca9b23e2ee417700db1d9709249bad039"
-    },
-    {
-      "index": 14,
-      "timestamp": 1755352513.632266,
-      "previous_hash": "2d890677f6406b9546028cccd8b542bca9b23e2ee417700db1d9709249bad039",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755352512392-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755352513.632261,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "635104c50a3e9781a6af7da5ba81eb2080d3b554aaff62b3b20813af963ce765"
-    },
-    {
-      "index": 15,
-      "timestamp": 1755352581.6053472,
-      "previous_hash": "635104c50a3e9781a6af7da5ba81eb2080d3b554aaff62b3b20813af963ce765",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755352580373-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755352581.6053388,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "ace924f6f529d3b337aeb1afb760d97bbbd8aed69f5c71d1fdc29d2e20b73062"
-    },
-    {
-      "index": 16,
-      "timestamp": 1755352656.456091,
-      "previous_hash": "ace924f6f529d3b337aeb1afb760d97bbbd8aed69f5c71d1fdc29d2e20b73062",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755352654215-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755352656.456085,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "6e837b77adeb78d645679e9561ca72a6f1850612244cd0b87e7ed497c52b42e5"
-    },
-    {
-      "index": 17,
-      "timestamp": 1755352725.44836,
-      "previous_hash": "6e837b77adeb78d645679e9561ca72a6f1850612244cd0b87e7ed497c52b42e5",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755352723199-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755352725.4483478,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "26bc2389298614af8f4360fdee69ec30bceafb05ee178f071bcfc8153f09e9aa"
-    },
-    {
-      "index": 18,
-      "timestamp": 1755352803.7600179,
-      "previous_hash": "26bc2389298614af8f4360fdee69ec30bceafb05ee178f071bcfc8153f09e9aa",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755352801516-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755352803.7600121,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "42dfb56b1ddb9830014fbe3ae037a7ded8924861e00e05c0cb7017f8389d7004"
-    },
-    {
-      "index": 19,
-      "timestamp": 1755352907.175903,
-      "previous_hash": "42dfb56b1ddb9830014fbe3ae037a7ded8924861e00e05c0cb7017f8389d7004",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755352904931-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755352907.1758962,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "e61e0f5bfc395377ab0742a48b3ba037a46a440f1de2cc332a8be8c9992b8e82"
-    },
-    {
-      "index": 20,
-      "timestamp": 1755352977.532036,
-      "previous_hash": "e61e0f5bfc395377ab0742a48b3ba037a46a440f1de2cc332a8be8c9992b8e82",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755352975287-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755352977.532019,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "6ba5a99eb90cf0d235fdb35380af8c60a44a5d4ace753c106aa4de8432850cd8"
-    },
-    {
-      "index": 21,
-      "timestamp": 1755353046.419055,
-      "previous_hash": "6ba5a99eb90cf0d235fdb35380af8c60a44a5d4ace753c106aa4de8432850cd8",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353044177-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353046.419046,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "9bdd08b071f9e59b7e303f0083222cff9f3a70cba4f9fbf299e1a6cf6b160a83"
-    },
-    {
-      "index": 22,
-      "timestamp": 1755353115.741291,
-      "previous_hash": "9bdd08b071f9e59b7e303f0083222cff9f3a70cba4f9fbf299e1a6cf6b160a83",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353113495-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353115.741279,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "25db3c12387bd1bbc75ff1750d33d2b0fd2813048e6cfe4e5a93faa995affe30"
-    },
-    {
-      "index": 23,
-      "timestamp": 1755353185.1615071,
-      "previous_hash": "25db3c12387bd1bbc75ff1750d33d2b0fd2813048e6cfe4e5a93faa995affe30",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353182922-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353185.1615,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "4a307c712a882a32ca34c1899ba2d80a4cb3a49f27950cf6ad2ba849aa2cbcdb"
-    },
-    {
-      "index": 24,
-      "timestamp": 1755353253.731942,
-      "previous_hash": "4a307c712a882a32ca34c1899ba2d80a4cb3a49f27950cf6ad2ba849aa2cbcdb",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353251487-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353253.731935,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "abcf9c64136cf461791048565ab6076bff935157d754945fcec9c8bc516b4850"
-    },
-    {
-      "index": 25,
-      "timestamp": 1755353322.059916,
-      "previous_hash": "abcf9c64136cf461791048565ab6076bff935157d754945fcec9c8bc516b4850",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353320818-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353322.059911,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "a328f928b61d2d8be59ecc92936c1a6a8488321a3caee852e4ab4e124ca8db47"
-    },
-    {
-      "index": 26,
-      "timestamp": 1755353397.954858,
-      "previous_hash": "a328f928b61d2d8be59ecc92936c1a6a8488321a3caee852e4ab4e124ca8db47",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353395708-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353397.954853,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "86bf042064b2c0b61e86de1a95f46c0b456a8adddef3c0c4d9a33d25ba15842e"
-    },
-    {
-      "index": 27,
-      "timestamp": 1755353466.4918132,
-      "previous_hash": "86bf042064b2c0b61e86de1a95f46c0b456a8adddef3c0c4d9a33d25ba15842e",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353465253-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353466.491808,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "5557d8acea2984f3743e0f37e1fe529f1ef646ca555465f075c4217ed1e831be"
-    },
-    {
-      "index": 28,
-      "timestamp": 1755353537.501868,
-      "previous_hash": "5557d8acea2984f3743e0f37e1fe529f1ef646ca555465f075c4217ed1e831be",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353535257-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353537.5018592,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "2b155b3df08d9fe53089fdecdec780b7e935947a8907168ee7c38e4d5f564b27"
-    },
-    {
-      "index": 29,
-      "timestamp": 1755353612.372262,
-      "previous_hash": "2b155b3df08d9fe53089fdecdec780b7e935947a8907168ee7c38e4d5f564b27",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353610127-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353612.3722508,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "4719d79d941c1f91f85c59760948576a880c40365e959e0201eb24bbebe60553"
-    },
-    {
-      "index": 30,
-      "timestamp": 1755353689.3912928,
-      "previous_hash": "4719d79d941c1f91f85c59760948576a880c40365e959e0201eb24bbebe60553",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353688149-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353689.391285,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "b7fbdf0c1abb047798fe02ba7c25c4c85dbf3121cdcf7376225d2d2528acefda"
-    },
-    {
-      "index": 31,
-      "timestamp": 1755353787.910044,
-      "previous_hash": "b7fbdf0c1abb047798fe02ba7c25c4c85dbf3121cdcf7376225d2d2528acefda",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353785673-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353787.910039,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "5f368c4fb6af28f3661904f5ec591f550242dd84988d199cea16b4604ba7df90"
-    },
-    {
-      "index": 32,
-      "timestamp": 1755353869.7323468,
-      "previous_hash": "5f368c4fb6af28f3661904f5ec591f550242dd84988d199cea16b4604ba7df90",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353867486-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353869.732338,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "cf334b82b891a6ece64ced742d54777564b56160e13c7cc9c6d6d41d0aed4332"
-    },
-    {
-      "index": 33,
-      "timestamp": 1755353954.573052,
-      "previous_hash": "cf334b82b891a6ece64ced742d54777564b56160e13c7cc9c6d6d41d0aed4332",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755353952330-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755353954.573042,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "7d057af1e3e021e3149e87a09ab33bfdbebdd38b4f4c86105d4011ef0df45d2d"
-    },
-    {
-      "index": 34,
-      "timestamp": 1755354050.043487,
-      "previous_hash": "7d057af1e3e021e3149e87a09ab33bfdbebdd38b4f4c86105d4011ef0df45d2d",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354047804-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354050.0434759,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "0ea5f66e3d9ac135e16c031b356e788e108be9aded5b007950db05661ed9757f"
-    },
-    {
-      "index": 35,
-      "timestamp": 1755354123.776633,
-      "previous_hash": "0ea5f66e3d9ac135e16c031b356e788e108be9aded5b007950db05661ed9757f",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354121538-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354123.7766259,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "2df7390216edf7cf9cb4b5435fccee66c888054a11bd02322848c6b53a079bc6"
-    },
-    {
-      "index": 36,
-      "timestamp": 1755354200.561099,
-      "previous_hash": "2df7390216edf7cf9cb4b5435fccee66c888054a11bd02322848c6b53a079bc6",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354198315-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354200.561085,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "562cb6d750abcd83511f0b2ba556d9ce6a14d7f4c79f623571017bebb3a21ba3"
-    },
-    {
-      "index": 37,
-      "timestamp": 1755354270.1943328,
-      "previous_hash": "562cb6d750abcd83511f0b2ba556d9ce6a14d7f4c79f623571017bebb3a21ba3",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354267947-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354270.194321,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "9d6952886dd2ce73b9196d8145c759ddc2902cdab4fb4f7540d7f9aeeaaeb17a"
-    },
-    {
-      "index": 38,
-      "timestamp": 1755354339.691365,
-      "previous_hash": "9d6952886dd2ce73b9196d8145c759ddc2902cdab4fb4f7540d7f9aeeaaeb17a",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354337448-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354339.69135,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "e839a099a2eab05fc0bfb2183cd03023ac8ed546ca7bac499fe6ca2fe13c39ef"
-    },
-    {
-      "index": 39,
-      "timestamp": 1755354411.638321,
-      "previous_hash": "e839a099a2eab05fc0bfb2183cd03023ac8ed546ca7bac499fe6ca2fe13c39ef",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354409397-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354411.6383119,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "35d80744b70aa23d5bba94e8df87ee3c37759c96c96fdec307614cd114e8adce"
-    },
-    {
-      "index": 40,
-      "timestamp": 1755354481.821215,
-      "previous_hash": "35d80744b70aa23d5bba94e8df87ee3c37759c96c96fdec307614cd114e8adce",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354479582-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354481.821205,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "e3883edfe454721cd7a1b9eadb441409b5f8240f37b25e30c6658b58f2cc9cbd"
-    },
-    {
-      "index": 41,
-      "timestamp": 1755354552.831216,
-      "previous_hash": "e3883edfe454721cd7a1b9eadb441409b5f8240f37b25e30c6658b58f2cc9cbd",
-      "miner_id": "miner-1",
-      "proposals": [
-        {
-          "proposal_id": "1755354550587-cluster-CLUSTER",
-          "proposer_id": "miner-1",
-          "kind": "CLUSTER",
-          "source_key": "cluster",
-          "timestamp": 1755354552.831209,
-          "decided_label": "A+",
-          "votes": []
-        }
-      ],
-      "block_hash": "ed5b4607835e5852bb1a3d0d7560c4cd30e95a549e777fef8f185870b8953a8e"
+      "block_hash": "9e2a9b2a64f7c22bfdfcf279cb9478dd2c49273c3a963e1035f5d155ed1ddd27"
     }
   ]
 }

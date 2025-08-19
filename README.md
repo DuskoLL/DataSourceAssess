@@ -75,18 +75,42 @@ Python 3.9+
 # 1. 激活虚拟环境
 source .venv/bin/activate
 
-# 2. 启动提议者节点（终端1）
-python proposer_node.py
+# 2. 启动三个提案节点（需要三个独立终端）
+# 终端1 - 启动提案节点1
+python proposer_node.py --id proposer-1
 
-# 3. 启动矿工节点（终端2）
-python miner_node.py
+# 终端2 - 启动提案节点2  
+python proposer_node.py --id proposer-2
 
-# 4. 生成可视化报告
+# 终端3 - 启动提案节点3
+python proposer_node.py --id proposer-3
+
+# 3. 启动矿工节点（终端4）
+# 保留历史（默认，推荐）
+python miner_node.py --id miner-1 --quorum 3
+# 或：清空历史并重置（仅当需要全新初始化时）
+python miner_node.py --id miner-1 --quorum 3 --reset-state
+
+# 4. 启动Web仪表板（终端5）
+source .venv/bin/activate && uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
+# 5. 生成可视化报告
 python visualize_reports.py
 
-# 5. 检查系统健康状况
+# 6. 检查系统健康状况
 python api_health_check.py
 ```
+
+### 分布式共识机制说明
+
+系统采用分布式提案-投票-共识机制，需要启动**三个提案节点**以确保系统的去中心化特性和容错能力：
+
+- **提案节点1 (proposer-1)**: 主要提案节点，负责发起数据源评估提案
+- **提案节点2 (proposer-2)**: 备用提案节点，参与投票和共识验证
+- **提案节点3 (proposer-3)**: 备用提案节点，参与投票和共识验证
+- **矿工节点**: 负责验证提案、执行共识算法并生成区块
+
+**重要**: 系统需要至少3个提案节点的投票才能达到法定人数(quorum)，确保提案能够被矿工节点处理并生成新区块。
 
 ### 系统配置
 主要配置文件：`config.yaml`

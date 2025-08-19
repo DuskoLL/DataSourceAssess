@@ -1,158 +1,294 @@
-2025-08-16 21:36:18 - clustering - INFO - K-means聚类完成: k=5, 数据点=1100, 耗时=134.81ms
-2025-08-16 21:37:28 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:37:32 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - The read operation timed out
-2025-08-16 21:37:45 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - _ssl.c:1018: The handshake operation timed out
-2025-08-16 21:37:48 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=197.03ms
-2025-08-16 21:37:50 - chain - INFO - 新区块: 高度=0, 哈希=5d2cfc668571
-2025-08-16 21:38:51 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:38:52 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:39:06 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:39:12 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=221.86ms
-2025-08-16 21:39:15 - chain - INFO - 新区块: 高度=1, 哈希=46c937d3a947
-2025-08-16 21:40:19 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
-2025-08-16 21:40:23 - http_client - WARNING - URL错误，重试 2/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
-2025-08-16 21:40:28 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:40:31 - http_client - WARNING - 请求异常，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=ADA - The read operation timed out
-2025-08-16 21:40:33 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:40:38 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=193.97ms
-2025-08-16 21:40:40 - chain - INFO - 新区块: 高度=2, 哈希=1bbcc918d8e0
-2025-08-16 21:41:45 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:41:47 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:41:48 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:41:51 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=472.36ms
-2025-08-16 21:41:54 - chain - INFO - 新区块: 高度=3, 哈希=f7b5610ba7cb
-2025-08-16 21:43:07 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:43:12 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:43:15 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT - _ssl.c:1018: The handshake operation timed out
-2025-08-16 21:43:21 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=409.99ms
-2025-08-16 21:43:24 - chain - INFO - 新区块: 高度=4, 哈希=3bc19a44994e
-2025-08-16 21:44:25 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:44:34 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - The read operation timed out
-2025-08-16 21:44:41 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=395.53ms
-2025-08-16 21:44:43 - chain - INFO - 新区块: 高度=5, 哈希=e8907c41f297
-2025-08-16 21:45:48 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:45:50 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=409.24ms
-2025-08-16 21:45:52 - chain - INFO - 新区块: 高度=6, 哈希=dbcab4e55545
-2025-08-16 21:46:58 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=382.00ms
-2025-08-16 21:47:00 - chain - INFO - 新区块: 高度=7, 哈希=bdad63fc9805
-2025-08-16 21:48:00 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:48:06 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=247.15ms
-2025-08-16 21:48:09 - chain - INFO - 新区块: 高度=8, 哈希=e78f962b18d4
-2025-08-16 21:49:12 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:49:13 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:49:16 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=296.94ms
-2025-08-16 21:49:18 - chain - INFO - 新区块: 高度=9, 哈希=8dae93882431
-2025-08-16 21:50:25 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:50:28 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=196.92ms
-2025-08-16 21:50:30 - chain - INFO - 新区块: 高度=10, 哈希=a9ce0d3f3c30
-2025-08-16 21:51:34 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:51:36 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:51:38 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=457.72ms
-2025-08-16 21:51:40 - chain - INFO - 新区块: 高度=11, 哈希=abbae1b81afc
-2025-08-16 21:52:45 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:52:50 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=144.51ms
-2025-08-16 21:52:51 - chain - INFO - 新区块: 高度=12, 哈希=2fdaddb2e85c
-2025-08-16 21:53:58 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=320.79ms
-2025-08-16 21:54:01 - chain - INFO - 新区块: 高度=13, 哈希=2d890677f640
-2025-08-16 21:55:12 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=185.48ms
-2025-08-16 21:55:13 - chain - INFO - 新区块: 高度=14, 哈希=635104c50a3e
-2025-08-16 21:56:20 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=252.36ms
-2025-08-16 21:56:21 - chain - INFO - 新区块: 高度=15, 哈希=ace924f6f529
-2025-08-16 21:57:25 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
-2025-08-16 21:57:29 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:57:30 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:57:32 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:57:34 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=149.50ms
-2025-08-16 21:57:36 - chain - INFO - 新区块: 高度=16, 哈希=6e837b77adeb
-2025-08-16 21:58:37 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:58:38 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:58:42 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:58:43 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=442.74ms
-2025-08-16 21:58:45 - chain - INFO - 新区块: 高度=17, 哈希=26bc23892986
-2025-08-16 21:59:54 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 21:59:57 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:00:01 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=249.53ms
-2025-08-16 22:00:03 - chain - INFO - 新区块: 高度=18, 哈希=42dfb56b1ddb
-2025-08-16 22:01:07 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - _ssl.c:1018: The handshake operation timed out
-2025-08-16 22:01:16 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT - _ssl.c:1018: The handshake operation timed out
-2025-08-16 22:01:25 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT - The read operation timed out
-2025-08-16 22:01:41 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - _ssl.c:1018: The handshake operation timed out
-2025-08-16 22:01:44 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=193.69ms
-2025-08-16 22:01:47 - chain - INFO - 新区块: 高度=19, 哈希=e61e0f5bfc39
-2025-08-16 22:02:53 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:02:55 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=417.87ms
-2025-08-16 22:02:57 - chain - INFO - 新区块: 高度=20, 哈希=6ba5a99eb90c
-2025-08-16 22:04:00 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:04:04 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=195.91ms
-2025-08-16 22:04:06 - chain - INFO - 新区块: 高度=21, 哈希=9bdd08b071f9
-2025-08-16 22:05:10 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:05:13 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=398.41ms
-2025-08-16 22:05:15 - chain - INFO - 新区块: 高度=22, 哈希=25db3c12387b
-2025-08-16 22:06:21 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:06:22 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=174.35ms
-2025-08-16 22:06:25 - chain - INFO - 新区块: 高度=23, 哈希=4a307c712a88
-2025-08-16 22:07:27 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:07:31 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=149.88ms
-2025-08-16 22:07:33 - chain - INFO - 新区块: 高度=24, 哈希=abcf9c64136c
-2025-08-16 22:08:34 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:08:38 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:08:40 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=400.10ms
-2025-08-16 22:08:42 - chain - INFO - 新区块: 高度=25, 哈希=a328f928b61d
-2025-08-16 22:09:46 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/btcusd - _ssl.c:1018: The handshake operation timed out
-2025-08-16 22:09:55 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=310.77ms
-2025-08-16 22:09:57 - chain - INFO - 新区块: 高度=26, 哈希=86bf042064b2
-2025-08-16 22:11:01 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:11:05 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=282.98ms
-2025-08-16 22:11:06 - chain - INFO - 新区块: 高度=27, 哈希=5557d8acea29
-2025-08-16 22:12:12 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:12:15 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=398.80ms
-2025-08-16 22:12:17 - chain - INFO - 新区块: 高度=28, 哈希=2b155b3df08d
-2025-08-16 22:13:22 - http_client - WARNING - 请求异常，重试 1/3: https://api.bitfinex.com/v1/pubticker/ethusd - The read operation timed out
-2025-08-16 22:13:24 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:13:28 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:13:30 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=269.53ms
-2025-08-16 22:13:32 - chain - INFO - 新区块: 高度=29, 哈希=4719d79d941c
-2025-08-16 22:14:33 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:14:40 - http_client - WARNING - 请求异常，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - The read operation timed out
-2025-08-16 22:14:48 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=464.13ms
-2025-08-16 22:14:49 - chain - INFO - 新区块: 高度=30, 哈希=b7fbdf0c1abb
-2025-08-16 22:15:50 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:16:21 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - The read operation timed out
-2025-08-16 22:16:25 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=360.26ms
-2025-08-16 22:16:27 - chain - INFO - 新区块: 高度=31, 哈希=5f368c4fb6af
-2025-08-16 22:17:35 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:17:40 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:17:47 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=435.05ms
-2025-08-16 22:17:49 - chain - INFO - 新区块: 高度=32, 哈希=cf334b82b891
-2025-08-16 22:18:57 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:19:12 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=144.19ms
-2025-08-16 22:19:14 - chain - INFO - 新区块: 高度=33, 哈希=7d057af1e3e0
-2025-08-16 22:20:30 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=SOLUSDT - The read operation timed out
-2025-08-16 22:20:38 - http_client - WARNING - 请求异常，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT - The read operation timed out
-2025-08-16 22:20:40 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:20:47 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=198.33ms
-2025-08-16 22:20:50 - chain - INFO - 新区块: 高度=34, 哈希=0ea5f66e3d9a
-2025-08-16 22:21:51 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:21:59 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:22:01 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=461.65ms
-2025-08-16 22:22:03 - chain - INFO - 新区块: 高度=35, 哈希=2df7390216ed
-2025-08-16 22:23:12 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:23:18 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=243.74ms
-2025-08-16 22:23:20 - chain - INFO - 新区块: 高度=36, 哈希=562cb6d750ab
-2025-08-16 22:24:21 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:24:25 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:24:27 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=177.23ms
-2025-08-16 22:24:30 - chain - INFO - 新区块: 高度=37, 哈希=9d6952886dd2
-2025-08-16 22:25:37 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=210.58ms
-2025-08-16 22:25:39 - chain - INFO - 新区块: 高度=38, 哈希=e839a099a2ea
-2025-08-16 22:26:49 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=276.68ms
-2025-08-16 22:26:51 - chain - INFO - 新区块: 高度=39, 哈希=35d80744b70a
-2025-08-16 22:27:52 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:27:54 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:27:57 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:27:59 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=412.45ms
-2025-08-16 22:28:01 - chain - INFO - 新区块: 高度=40, 哈希=e3883edfe454
-2025-08-16 22:29:05 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:29:09 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
-2025-08-16 22:29:10 - clustering - INFO - K-means聚类完成: k=5, 数据点=2100, 耗时=315.30ms
-2025-08-16 22:29:12 - chain - INFO - 新区块: 高度=41, 哈希=ed5b4607835e
+2025-08-19 20:29:53 - clustering - INFO - K-means聚类完成: k=5, 数据点=1102, 耗时=157.73ms
+2025-08-19 20:31:01 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:31:10 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:31:13 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:31:14 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:31:16 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:31:17 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:31:17 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:31:18 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:31:20 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:31:20 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=286.23ms
+2025-08-19 20:31:21 - chain - INFO - 新区块: 高度=0, 哈希=00ce9cecd580
+2025-08-19 20:32:26 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:32:29 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:32:32 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:32:35 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:32:42 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=SOL - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:32:47 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:32:48 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:32:50 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:32:52 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:32:52 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:32:53 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:32:54 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:32:55 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:32:56 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=464.16ms
+2025-08-19 20:32:58 - chain - INFO - 新区块: 高度=1, 哈希=e82854af6a94
+2025-08-19 20:34:13 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:34:14 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:34:16 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:34:18 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:34:18 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:34:18 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:34:19 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:34:21 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:34:21 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=466.02ms
+2025-08-19 20:34:24 - chain - INFO - 新区块: 高度=2, 哈希=66ed1380f563
+2025-08-19 20:35:31 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:35:34 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:35:39 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:35:40 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:35:42 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:35:44 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:35:44 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:35:45 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:35:46 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:35:47 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:35:48 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=267.56ms
+2025-08-19 20:35:50 - chain - INFO - 新区块: 高度=3, 哈希=3bda06037112
+2025-08-19 20:36:53 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:37:01 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:37:03 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:37:05 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:37:06 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:37:09 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:37:09 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:37:09 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:37:10 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:37:12 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:37:12 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=665.91ms
+2025-08-19 20:37:15 - chain - INFO - 新区块: 高度=4, 哈希=61d90ac10f05
+2025-08-19 20:38:28 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:38:29 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:38:30 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:38:33 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:38:33 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:38:33 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:38:34 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:38:36 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:38:37 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=1107.23ms
+2025-08-19 20:38:39 - chain - INFO - 新区块: 高度=5, 哈希=bf7b7b072745
+2025-08-19 20:39:46 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:39:48 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:39:50 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:39:56 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:39:58 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:39:59 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:40:02 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:40:02 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:40:02 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:40:03 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:40:05 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:40:05 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=230.26ms
+2025-08-19 20:40:07 - chain - INFO - 新区块: 高度=6, 哈希=f6839cb7e3e7
+2025-08-19 20:41:11 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:41:21 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:41:22 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:41:24 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:41:26 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:41:26 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:41:27 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:41:28 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:41:29 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:41:30 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=1065.61ms
+2025-08-19 20:41:33 - chain - INFO - 新区块: 高度=7, 哈希=0dab866eaec8
+2025-08-19 20:42:34 - http_client - WARNING - HTTP错误 403，重试 1/3: https://api.binance.us/api/v3/ticker/price?symbol=BTCUSD
+2025-08-19 20:42:35 - http_client - WARNING - HTTP错误 403，重试 2/3: https://api.binance.us/api/v3/ticker/price?symbol=BTCUSD
+2025-08-19 20:42:36 - http_client - WARNING - HTTP错误 403，重试 3/3: https://api.binance.us/api/v3/ticker/price?symbol=BTCUSD
+2025-08-19 20:42:38 - http_client - ERROR - HTTP请求最终失败: https://api.binance.us/api/v3/ticker/price?symbol=BTCUSD - http_error: 403
+2025-08-19 20:42:41 - http_client - WARNING - HTTP错误 403，重试 1/3: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD
+2025-08-19 20:42:42 - http_client - WARNING - HTTP错误 403，重试 2/3: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD
+2025-08-19 20:42:43 - http_client - WARNING - HTTP错误 403，重试 3/3: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD
+2025-08-19 20:42:45 - http_client - ERROR - HTTP请求最终失败: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD - http_error: 403
+2025-08-19 20:42:46 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:42:53 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:43:01 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:43:02 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:43:04 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:43:06 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:43:06 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:43:06 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:43:07 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:43:09 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:43:09 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=431.70ms
+2025-08-19 20:43:12 - chain - INFO - 新区块: 高度=8, 哈希=eeb35720fa87
+2025-08-19 20:44:13 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XBTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:44:24 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:44:27 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:44:28 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:44:30 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:44:32 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:44:32 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:44:33 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:44:34 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:44:35 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:44:36 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=604.58ms
+2025-08-19 20:44:37 - chain - INFO - 新区块: 高度=9, 哈希=b56090876a13
+2025-08-19 20:45:41 - http_client - WARNING - URL错误，重试 1/3: https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:45:44 - http_client - WARNING - URL错误，重试 2/3: https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:45:48 - http_client - WARNING - URL错误，重试 3/3: https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:45:53 - http_client - ERROR - HTTP请求最终失败: https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD - url_error: _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:46:03 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:46:06 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:46:12 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=SOLUSDT - _ssl.c:1112: The handshake operation timed out
+2025-08-19 20:46:21 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:46:22 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:46:24 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:46:27 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:46:27 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:46:27 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:46:28 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:46:30 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:46:31 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=858.62ms
+2025-08-19 20:46:32 - chain - INFO - 新区块: 高度=10, 哈希=ba819541889e
+2025-08-19 20:47:36 - http_client - WARNING - JSON解析失败: https://api.kucoin.com/api/v1/market/stats?symbol=ETH-USDT - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:47:45 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:47:47 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:47:49 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:47:50 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:47:53 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:47:53 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:47:53 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:47:54 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:47:56 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:47:56 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=800.34ms
+2025-08-19 20:47:59 - chain - INFO - 新区块: 高度=11, 哈希=add09cd373be
+2025-08-19 20:49:04 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=ADAUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:49:08 - http_client - WARNING - JSON解析失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - json_decode_error: Expecting value: line 1 column 1 (char 0)
+2025-08-19 20:49:13 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:49:14 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:49:16 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:49:18 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:49:18 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:49:19 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:49:20 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:49:21 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: [Errno 8] nodename nor servname provided, or not known
+2025-08-19 20:49:22 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=348.90ms
+2025-08-19 20:49:24 - chain - INFO - 新区块: 高度=12, 哈希=2f166a258190
+2025-08-19 20:50:29 - http_client - WARNING - URL错误，重试 1/3: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - timed out
+2025-08-19 20:50:33 - http_client - WARNING - URL错误，重试 2/3: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - timed out
+2025-08-19 20:50:37 - http_client - WARNING - URL错误，重试 3/3: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - timed out
+2025-08-19 20:50:41 - http_client - ERROR - HTTP请求最终失败: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - url_error: timed out
+2025-08-19 20:50:45 - http_client - WARNING - URL错误，重试 1/3: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - timed out
+2025-08-19 20:50:48 - http_client - WARNING - URL错误，重试 2/3: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - timed out
+2025-08-19 20:50:52 - http_client - WARNING - URL错误，重试 3/3: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - timed out
+2025-08-19 20:50:57 - http_client - ERROR - HTTP请求最终失败: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - url_error: timed out
+2025-08-19 20:51:02 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT - timed out
+2025-08-19 20:51:07 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT - timed out
+2025-08-19 20:51:13 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT - timed out
+2025-08-19 20:51:20 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT - url_error: timed out
+2025-08-19 20:51:23 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT - timed out
+2025-08-19 20:51:26 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT - timed out
+2025-08-19 20:51:30 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT - timed out
+2025-08-19 20:51:35 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT - url_error: timed out
+2025-08-19 20:51:38 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=ADA - timed out
+2025-08-19 20:51:41 - http_client - WARNING - URL错误，重试 2/3: https://api.coinbase.com/v2/exchange-rates?currency=ADA - timed out
+2025-08-19 20:51:45 - http_client - WARNING - URL错误，重试 3/3: https://api.coinbase.com/v2/exchange-rates?currency=ADA - timed out
+2025-08-19 20:51:50 - http_client - ERROR - HTTP请求最终失败: https://api.coinbase.com/v2/exchange-rates?currency=ADA - url_error: timed out
+2025-08-19 20:51:50 - api_fallback - ERROR - 所有备用API都失败 cardano: url_error: timed out
+2025-08-19 20:51:53 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - timed out
+2025-08-19 20:51:57 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - timed out
+2025-08-19 20:52:01 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - timed out
+2025-08-19 20:52:05 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=XRPUSDT - url_error: timed out
+2025-08-19 20:52:08 - http_client - WARNING - URL错误，重试 1/3: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - timed out
+2025-08-19 20:52:12 - http_client - WARNING - URL错误，重试 2/3: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - timed out
+2025-08-19 20:52:16 - http_client - WARNING - URL错误，重试 3/3: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - timed out
+2025-08-19 20:52:20 - http_client - ERROR - HTTP请求最终失败: https://api.kraken.com/0/public/Ticker?pair=XRPUSD - url_error: timed out
+2025-08-19 20:52:23 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=XRP - timed out
+2025-08-19 20:52:26 - http_client - ERROR - http_request 失败: 
+2025-08-19 20:52:26 - evaluation - ERROR - evaluate_btc_binance 失败: 
+2025-08-19 20:52:27 - http_client - WARNING - URL错误，重试 2/3: https://api.coinbase.com/v2/exchange-rates?currency=XRP - timed out
+2025-08-19 20:52:31 - http_client - WARNING - URL错误，重试 3/3: https://api.coinbase.com/v2/exchange-rates?currency=XRP - timed out
+2025-08-19 20:52:35 - http_client - ERROR - HTTP请求最终失败: https://api.coinbase.com/v2/exchange-rates?currency=XRP - url_error: timed out
+2025-08-19 20:52:35 - api_fallback - ERROR - 所有备用API都失败 ripple: url_error: timed out
+2025-08-19 20:52:38 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT - timed out
+2025-08-19 20:52:42 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT - timed out
+2025-08-19 20:52:46 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT - timed out
+2025-08-19 20:52:50 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT - url_error: timed out
+2025-08-19 20:52:53 - http_client - WARNING - URL错误，重试 1/3: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - timed out
+2025-08-19 20:52:57 - http_client - WARNING - URL错误，重试 2/3: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - timed out
+2025-08-19 20:53:01 - http_client - WARNING - URL错误，重试 3/3: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - timed out
+2025-08-19 20:53:05 - http_client - ERROR - HTTP请求最终失败: https://api.kraken.com/0/public/Ticker?pair=DOGEUSD - url_error: timed out
+2025-08-19 20:53:08 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=DOGE - timed out
+2025-08-19 20:53:12 - http_client - WARNING - URL错误，重试 2/3: https://api.coinbase.com/v2/exchange-rates?currency=DOGE - timed out
+2025-08-19 20:53:16 - http_client - WARNING - URL错误，重试 3/3: https://api.coinbase.com/v2/exchange-rates?currency=DOGE - timed out
+2025-08-19 20:53:20 - http_client - ERROR - HTTP请求最终失败: https://api.coinbase.com/v2/exchange-rates?currency=DOGE - url_error: timed out
+2025-08-19 20:53:20 - api_fallback - ERROR - 所有备用API都失败 dogecoin: url_error: timed out
+2025-08-19 20:53:23 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=SOL - timed out
+2025-08-19 20:53:27 - http_client - WARNING - URL错误，重试 2/3: https://api.coinbase.com/v2/exchange-rates?currency=SOL - timed out
+2025-08-19 20:53:31 - http_client - WARNING - URL错误，重试 3/3: https://api.coinbase.com/v2/exchange-rates?currency=SOL - timed out
+2025-08-19 20:53:35 - http_client - ERROR - HTTP请求最终失败: https://api.coinbase.com/v2/exchange-rates?currency=SOL - url_error: timed out
+2025-08-19 20:53:38 - http_client - WARNING - URL错误，重试 1/3: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - timed out
+2025-08-19 20:53:42 - http_client - WARNING - URL错误，重试 2/3: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - timed out
+2025-08-19 20:53:46 - http_client - WARNING - URL错误，重试 3/3: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - timed out
+2025-08-19 20:53:51 - http_client - ERROR - HTTP请求最终失败: https://api.kraken.com/0/public/Ticker?pair=SOLUSD - url_error: timed out
+2025-08-19 20:53:54 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=SOLUSDT - timed out
+2025-08-19 20:53:57 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=SOLUSDT - timed out
+2025-08-19 20:54:01 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=SOLUSDT - timed out
+2025-08-19 20:54:06 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=SOLUSDT - url_error: timed out
+2025-08-19 20:54:06 - api_fallback - ERROR - 所有备用API都失败 solana: url_error: timed out
+2025-08-19 20:54:09 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=TRX - timed out
+2025-08-19 20:54:12 - http_client - WARNING - URL错误，重试 2/3: https://api.coinbase.com/v2/exchange-rates?currency=TRX - timed out
+2025-08-19 20:54:16 - http_client - WARNING - URL错误，重试 3/3: https://api.coinbase.com/v2/exchange-rates?currency=TRX - timed out
+2025-08-19 20:54:21 - http_client - ERROR - HTTP请求最终失败: https://api.coinbase.com/v2/exchange-rates?currency=TRX - url_error: timed out
+2025-08-19 20:54:24 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT - timed out
+2025-08-19 20:54:27 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT - timed out
+2025-08-19 20:54:31 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT - timed out
+2025-08-19 20:54:36 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT - url_error: timed out
+2025-08-19 20:54:36 - api_fallback - ERROR - 所有备用API都失败 tron: url_error: timed out
+2025-08-19 20:54:39 - http_client - WARNING - URL错误，重试 1/3: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - timed out
+2025-08-19 20:54:42 - http_client - WARNING - URL错误，重试 2/3: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - timed out
+2025-08-19 20:54:46 - http_client - WARNING - URL错误，重试 3/3: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - timed out
+2025-08-19 20:54:51 - http_client - ERROR - HTTP请求最终失败: https://api.kraken.com/0/public/Ticker?pair=DOTUSD - url_error: timed out
+2025-08-19 20:54:54 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=DOT - timed out
+2025-08-19 20:54:57 - http_client - WARNING - URL错误，重试 2/3: https://api.coinbase.com/v2/exchange-rates?currency=DOT - timed out
+2025-08-19 20:55:01 - http_client - WARNING - URL错误，重试 3/3: https://api.coinbase.com/v2/exchange-rates?currency=DOT - timed out
+2025-08-19 20:55:06 - http_client - ERROR - HTTP请求最终失败: https://api.coinbase.com/v2/exchange-rates?currency=DOT - url_error: timed out
+2025-08-19 20:55:09 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=DOTUSDT - timed out
+2025-08-19 20:55:12 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=DOTUSDT - timed out
+2025-08-19 20:55:16 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=DOTUSDT - timed out
+2025-08-19 20:55:21 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=DOTUSDT - url_error: timed out
+2025-08-19 20:55:21 - api_fallback - ERROR - 所有备用API都失败 polkadot: url_error: timed out
+2025-08-19 20:55:26 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - timed out
+2025-08-19 20:55:32 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - timed out
+2025-08-19 20:55:38 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - timed out
+2025-08-19 20:55:44 - http_client - ERROR - HTTP请求最终失败: https://api.binance.com/api/v3/ticker/price?symbol=AVAXUSDT - url_error: timed out
+2025-08-19 20:55:44 - http_client - WARNING - HTTP错误 401，重试 1/3: https://api.weather.com
+2025-08-19 20:55:45 - http_client - WARNING - HTTP错误 401，重试 2/3: https://api.weather.com
+2025-08-19 20:55:46 - http_client - WARNING - HTTP错误 401，重试 3/3: https://api.weather.com
+2025-08-19 20:55:48 - http_client - ERROR - HTTP请求最终失败: https://api.weather.com - http_error: 401
+2025-08-19 20:55:54 - http_client - WARNING - URL错误，重试 1/3: https://api.example.com/test - timed out
+2025-08-19 20:56:00 - http_client - WARNING - URL错误，重试 2/3: https://api.example.com/test - timed out
+2025-08-19 20:56:06 - http_client - WARNING - URL错误，重试 3/3: https://api.example.com/test - timed out
+2025-08-19 20:56:12 - http_client - ERROR - HTTP请求最终失败: https://api.example.com/test - url_error: timed out
+2025-08-19 20:56:13 - clustering - INFO - K-means聚类完成: k=5, 数据点=2102, 耗时=551.83ms
+2025-08-19 20:56:15 - chain - INFO - 新区块: 高度=13, 哈希=9e2a9b2a64f7
+2025-08-19 20:57:19 - http_client - WARNING - URL错误，重试 1/3: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - timed out
+2025-08-19 20:57:22 - http_client - WARNING - URL错误，重试 2/3: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - timed out
+2025-08-19 20:57:26 - http_client - WARNING - URL错误，重试 3/3: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - timed out
+2025-08-19 20:57:31 - http_client - ERROR - HTTP请求最终失败: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd - url_error: timed out
+2025-08-19 20:57:34 - http_client - WARNING - URL错误，重试 1/3: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD - timed out
+2025-08-19 20:57:37 - http_client - WARNING - URL错误，重试 2/3: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD - timed out
+2025-08-19 20:57:41 - http_client - WARNING - URL错误，重试 3/3: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD - timed out
+2025-08-19 20:57:46 - http_client - ERROR - HTTP请求最终失败: https://api.binance.us/api/v3/ticker/price?symbol=ETHUSD - url_error: timed out
+2025-08-19 20:57:49 - http_client - WARNING - URL错误，重试 1/3: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - timed out
+2025-08-19 20:57:52 - http_client - WARNING - URL错误，重试 2/3: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - timed out
+2025-08-19 20:57:56 - http_client - WARNING - URL错误，重试 3/3: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - timed out
+2025-08-19 20:58:01 - http_client - ERROR - HTTP请求最终失败: https://api.kraken.com/0/public/Ticker?pair=ETHUSD - url_error: timed out
+2025-08-19 20:58:04 - http_client - WARNING - URL错误，重试 1/3: https://api.gemini.com/v1/pubticker/ethusd - timed out
+2025-08-19 20:58:07 - http_client - WARNING - URL错误，重试 2/3: https://api.gemini.com/v1/pubticker/ethusd - timed out
+2025-08-19 20:58:11 - http_client - WARNING - URL错误，重试 3/3: https://api.gemini.com/v1/pubticker/ethusd - timed out
+2025-08-19 20:58:16 - http_client - ERROR - HTTP请求最终失败: https://api.gemini.com/v1/pubticker/ethusd - url_error: timed out
+2025-08-19 20:58:20 - http_client - WARNING - URL错误，重试 1/3: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - timed out
+2025-08-19 20:58:24 - http_client - WARNING - URL错误，重试 2/3: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - timed out
+2025-08-19 20:58:28 - http_client - WARNING - URL错误，重试 3/3: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - timed out
+2025-08-19 20:58:32 - http_client - ERROR - HTTP请求最终失败: https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd - url_error: timed out
+2025-08-19 20:58:38 - http_client - WARNING - URL错误，重试 1/3: https://api.kucoin.com/api/v1/market/orderbook/level1?symbol=BNB-USDT - timed out
+2025-08-19 20:58:44 - http_client - WARNING - URL错误，重试 2/3: https://api.kucoin.com/api/v1/market/orderbook/level1?symbol=BNB-USDT - timed out
+2025-08-19 20:58:50 - http_client - WARNING - URL错误，重试 3/3: https://api.kucoin.com/api/v1/market/orderbook/level1?symbol=BNB-USDT - timed out
+2025-08-19 20:58:56 - http_client - ERROR - HTTP请求最终失败: https://api.kucoin.com/api/v1/market/orderbook/level1?symbol=BNB-USDT - url_error: timed out
+2025-08-19 20:58:59 - http_client - WARNING - URL错误，重试 1/3: https://api.coinbase.com/v2/exchange-rates?currency=ADA - timed out
+2025-08-19 20:59:03 - http_client - WARNING - URL错误，重试 2/3: https://api.coinbase.com/v2/exchange-rates?currency=ADA - timed out
+2025-08-19 20:59:05 - http_client - ERROR - http_request 失败: 
+2025-08-19 20:59:05 - evaluation - ERROR - evaluate_ada_coinbase 失败: 

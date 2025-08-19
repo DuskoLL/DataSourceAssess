@@ -1,0 +1,21 @@
+{
+  "node_id": "proposer-1",
+  "label": "D",
+  "deviation_ratio": 1.0,
+  "price": null,
+  "latency_ms": 5.464076995849609,
+  "score": 29.184735486935153,
+  "data_fresh_ms": null,
+  "server_ts_ms": null,
+  "features": {
+    "accuracy": 0.670425726409004,
+    "availability": 10.0,
+    "response_time": 99.89071846008301,
+    "update_frequency": 50.0,
+    "integrity": 0.0,
+    "error_rate": 100.0,
+    "historical": 50.0,
+    "volatility": 50.0
+  },
+  "error": "generic:url_error: [Errno 8] nodename nor servname provided, or not known"
+}

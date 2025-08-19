@@ -50,6 +50,7 @@ from oracle_chain import (
     save_master_table,
     apply_cluster_results_to_master,
     majority_decision,
+    Block,  # 新增：用于重建历史区块
 )
 
 
@@ -62,6 +63,50 @@ def save_chain_state(chain: ChainState) -> None:
         block_dict["proposals"] = [asdict(p) for p in block.proposals]
         chain_doc["blocks"].append(block_dict)
     save_chain_doc(chain_doc)
+
+
+def load_chain_state(chain: ChainState) -> None:
+    """从持久化文件加载历史区块到内存中，保持链连续性"""
+    try:
+        doc = load_chain_doc()
+        blocks = doc.get("blocks", []) if isinstance(doc, dict) else []
+        if not blocks:
+            print("[启动] 未发现历史区块，作为创世启动。")
+            return
+        restored = 0
+        for b in blocks:
+            if not isinstance(b, dict):
+                continue
+            # 重建 Proposal 对象列表（与save一致，未包含动态属性）
+            proposals_data = b.get("proposals", [])
+            proposals_objs: List[Proposal] = []
+            for p in proposals_data:
+                if isinstance(p, dict):
+                    try:
+                        proposals_objs.append(Proposal(**p))
+                    except TypeError:
+                        # 字段不匹配时进行必要的过滤
+                        allow_keys = {"proposal_id", "proposer_id", "kind", "source_key", "timestamp", "decided_label", "votes"}
+                        filtered = {k: v for k, v in p.items() if k in allow_keys}
+                        proposals_objs.append(Proposal(**filtered))
+            try:
+                block_obj = Block(
+                    index=int(b.get("index", 0)),
+                    timestamp=float(b.get("timestamp", time.time())),
+                    previous_hash=str(b.get("previous_hash", "genesis")),
+                    miner_id=str(b.get("miner_id", "unknown")),
+                    proposals=proposals_objs,
+                    block_hash=str(b.get("block_hash", "")),
+                )
+                chain.blocks.append(block_obj)
+                restored += 1
+            except Exception as e:
+                print(f"[启动] 恢复区块失败：{e}")
+        if restored:
+            tip = chain.blocks[-1].block_hash[:12] if chain.blocks and chain.blocks[-1].block_hash else ""
+            print(f"[启动] 已加载历史区块 {restored} 个，当前高度={len(chain.blocks)-1} tip={tip}")
+    except Exception as e:
+        print(f"[启动] 加载历史链失败：{e}")
 
 
 def reset_system_state():
@@ -277,16 +322,23 @@ def main() -> None:
     parser.add_argument("--id", default="miner-1", help="矿工节点ID")
     parser.add_argument("--quorum", type=int, default=3, help="多数门限")
     parser.add_argument("--maintenance-interval", type=int, default=60, help="维护间隔（秒）")
+    parser.add_argument("--reset-state", action="store_true", help="启动时清空历史并重置系统（默认保留历史数据）")
     args = parser.parse_args()
 
     node_id = args.id
     quorum = args.quorum
     maintenance_interval = args.maintenance_interval
 
-    # 系统启动时重置状态
-    reset_system_state()
+    # 根据参数决定是否重置
+    if args.reset_state:
+        reset_system_state()
+    else:
+        print("[启动] 保留历史数据（未启用 --reset-state）。")
 
     chain = ChainState(miner_id=node_id, quorum=quorum)
+    # 尝试加载历史区块，确保延续链
+    load_chain_state(chain)
+
     bootstrap_registry_with_builtins()
     
     # 内部Proposer仅用于特征更新时的评估
