@@ -16,39 +16,44 @@ Usage: python3 visualize_reports.py
 import json
 import os
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-from matplotlib.patches import Patch
 import numpy as np
 from collections import defaultdict
-from typing import Dict, List, Any, Tuple
+from typing import Dict, List, Any
 import time
 import random
 
 def _save_fig(filepath: str) -> None:
-    """Save figure as EPS, PNG and SVG with publication-quality formatting for IET journals"""
+    """Save figure as EPS, PNG and SVG with IET journal template compliance"""
     plt.tight_layout()
     base_path = os.path.splitext(filepath)[0]
     
-    # Configure font and style for publication quality
+    # IET Journal formatting standards - use serif fonts (Times preferred)
     plt.rcParams.update({
-        'font.size': 12,
-        'axes.titlesize': 14,
-        'axes.labelsize': 12,
-        'xtick.labelsize': 10,
-        'ytick.labelsize': 10,
-        'legend.fontsize': 10,
-        'figure.titlesize': 16,
-        'font.family': ['DejaVu Sans', 'Arial', 'Helvetica', 'sans-serif'],
-        'mathtext.default': 'regular'
+        'font.family': ['Times New Roman', 'serif'],
+        'font.size': 10,          # IET standard: minimum 10pt font
+        'font.weight': 'normal',  # unify default text weight
+        'axes.titlesize': 12,     # Slightly larger for readability
+        'axes.titleweight': 'bold',
+        'axes.labelsize': 10,
+        'axes.labelweight': 'normal',
+        'xtick.labelsize': 9,
+        'ytick.labelsize': 9,
+        'legend.fontsize': 9,
+        'legend.title_fontsize': 10,
+        'legend.framealpha': 1.0,   # Prevent EPS transparency warnings
+        'figure.titlesize': 12,
+        'mathtext.fontset': 'stix',  # Professional math fonts
+        'lines.linewidth': 1.0,
+        'axes.linewidth': 0.8
     })
     
-    # Save EPS (preferred vector format for IET/Wiley journals)
-    plt.savefig(base_path + '.eps', format='eps', bbox_inches='tight', dpi=600, 
+    # Save EPS first (IET preferred format for line art/charts) 
+    plt.savefig(base_path + '.eps', format='eps', bbox_inches='tight', dpi=600,
                 facecolor='white', edgecolor='none')
-    # Save high-resolution PNG (600 DPI as per IET guidelines)
+    # Save PNG at 600 DPI (exceeds IET minimum 300 DPI for images)
     plt.savefig(base_path + '.png', format='png', bbox_inches='tight', dpi=600,
                 facecolor='white', edgecolor='none')
-    # Save SVG as backup vector format
+    # Save SVG as supplementary vector format
     plt.savefig(base_path + '.svg', format='svg', bbox_inches='tight',
                 facecolor='white', edgecolor='none')
     plt.close()
@@ -159,12 +164,12 @@ def fig_grade_distribution(master: Dict[str, Any], out_path: str) -> None:
     sorted_grades = [g for g in grade_order if g in grade_counts]
     counts = [grade_counts[g] for g in sorted_grades]
     
-    plt.figure(figsize=(8, 5))
-    bars = plt.bar(sorted_grades, counts, color='#42a5f5', alpha=0.8, edgecolor='black', linewidth=0.5)
-    plt.title('Overall Grade Distribution', fontsize=16, fontweight='bold')
+    plt.figure(figsize=(3.46, 3.0))  # IET single column width
+    bars = plt.bar(sorted_grades, counts, color='#42a5f5', edgecolor='black', linewidth=0.5)
+    plt.title('Overall Grade Distribution', fontsize=12, fontweight='bold')
     plt.xlabel('Grade Level', fontsize=12)
     plt.ylabel('Number of Sources', fontsize=12)
-    plt.grid(axis='y', alpha=0.3)
+    plt.grid(axis='y', linewidth=0.5)
     
     for bar, count in zip(bars, counts):
         plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.5, 
@@ -172,83 +177,7 @@ def fig_grade_distribution(master: Dict[str, Any], out_path: str) -> None:
     
     _save_fig(out_path)
 
-def fig_grade_distribution_per_category(master: Dict[str, Any], out_dir: str) -> None:
-    """Grade distribution for each category"""
-    sources = master.get('sources', {}) or {}
-    
-    category_grades = defaultdict(lambda: defaultdict(int))
-    
-    for source_id, meta in sources.items():
-        category = meta.get('category', 'unknown')
-        label = meta.get('label', 'D')
-        category_grades[category][label] += 1
-    
-    for category, grades in category_grades.items():
-        if not grades:
-            continue
-            
-        # Enforce grade order A+ > A > B > C > D
-        grade_order = ['A+', 'A', 'B', 'C', 'D']
-        labels = [g for g in grade_order if g in grades]
-        counts = [grades[g] for g in labels]
-        
-        plt.figure(figsize=(8, 6))
-        bars = plt.bar(labels, counts, color='#4c6ef5', alpha=0.8, edgecolor='black', linewidth=0.5)
-        
-        plt.xlabel('Grade Level', fontsize=12)
-        plt.ylabel('Number of Data Sources', fontsize=12)
-        plt.title(f'Grade Distribution - {category.replace("_", " ").title()}', 
-                  fontsize=14, fontweight='bold')
-        plt.grid(axis='y', alpha=0.3)
-        
-        # Add count labels
-        for bar, count in zip(bars, counts):
-            plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.5, 
-                    str(count), ha='center', va='bottom', fontsize=11, fontweight='bold')
-        
-        _save_fig(os.path.join(out_dir, f'grade_dist__{category}.svg'))
 
-def fig_rankings_topn(master: Dict[str, Any], out_dir: str, topn: int = 10) -> None:
-    """Top-N rankings per category"""
-    rankings: Dict[str, List[str]] = master.get('rankings', {}) or {}
-    
-    for cat, keys in rankings.items():
-        if not keys:
-            continue
-        
-        top = keys[:topn] if len(keys) >= topn else keys
-        positions = list(range(1, len(top) + 1))
-        
-        # Remove virtual identifiers from display names
-        display_names = []
-        for key in top:
-            if key.startswith('virt_'):
-                # Extract grade from virtual key like 'virt_A+_0001'
-                parts = key.split('_')
-                if len(parts) >= 2:
-                    display_names.append(f"API-{parts[1]}")
-                else:
-                    display_names.append(f"API-{key[-4:]}")
-            else:
-                display_names.append(key.replace('_', '-'))
-        
-        plt.figure(figsize=(10, 6))
-        bars = plt.barh(positions, [1]*len(top), color='#339af0', alpha=0.8, edgecolor='black', linewidth=0.5)
-        
-        plt.yticks(positions, display_names)
-        plt.xlabel('Ranking Position (Normalized)', fontsize=12)
-        plt.ylabel('Data Source', fontsize=12)
-        plt.title(f'{cat.replace("_", " ").title()} - Top {len(top)} Rankings',
-                  fontsize=14, fontweight='bold')
-        plt.gca().invert_yaxis()
-        plt.grid(axis='x', alpha=0.3)
-        
-        # Add ranking numbers
-        for i, bar in enumerate(bars):
-            plt.text(bar.get_width() + 0.02, bar.get_y() + bar.get_height()/2, 
-                    f"#{i+1}", va='center', fontsize=10, fontweight='bold')
-        
-        _save_fig(os.path.join(out_dir, f'rankings_top{topn}__{cat}.svg'))
 
 def fig_features_by_label(master: Dict[str, Any], out_path: str) -> None:
     """Feature comparison across different grades"""
@@ -275,51 +204,51 @@ def fig_features_by_label(master: Dict[str, Any], out_path: str) -> None:
     avail_means = [np.mean(data[lbl]['avail']) if data[lbl]['avail'] else 0 for lbl in labels]
     vol_means = [np.mean(data[lbl]['vol']) if data[lbl]['vol'] else 0 for lbl in labels]
     
-    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 8))
+    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(6.89, 5.5))
     
     # Accuracy
-    bars1 = ax1.bar(labels, acc_means, color='#4caf50', alpha=0.8, edgecolor='black', linewidth=0.5)
+    bars1 = ax1.bar(labels, acc_means, color='#4caf50', edgecolor='black', linewidth=0.5)
     ax1.set_title('Average Accuracy by Grade', fontweight='bold')
     ax1.set_ylabel('Accuracy Score')
-    ax1.grid(axis='y', alpha=0.3)
+    ax1.grid(axis='y', linewidth=0.5)
     for bar, val in zip(bars1, acc_means):
         h = bar.get_height()
         ax1.text(bar.get_x() + bar.get_width()/2., (h + 1.0) if h > 0 else 1.0,
                  f'{val:.1f}', ha='center', va='bottom', fontsize=9)
     
     # Response Time
-    bars2 = ax2.bar(labels, rt_means, color='#ff9800', alpha=0.8, edgecolor='black', linewidth=0.5)
+    bars2 = ax2.bar(labels, rt_means, color='#ff9800', edgecolor='black', linewidth=0.5)
     ax2.set_title('Average Response Time by Grade', fontweight='bold')
     ax2.set_ylabel('Response Time (ms)')
-    ax2.grid(axis='y', alpha=0.3)
+    ax2.grid(axis='y', linewidth=0.5)
     for bar, val in zip(bars2, rt_means):
         h = bar.get_height()
         ax2.text(bar.get_x() + bar.get_width()/2., (h + 1.0) if h > 0 else 1.0,
                  f'{val:.1f}', ha='center', va='bottom', fontsize=9)
     
     # Availability
-    bars3 = ax3.bar(labels, avail_means, color='#2196f3', alpha=0.8, edgecolor='black', linewidth=0.5)
+    bars3 = ax3.bar(labels, avail_means, color='#2196f3', edgecolor='black', linewidth=0.5)
     ax3.set_title('Average Availability by Grade', fontweight='bold')
     ax3.set_ylabel('Availability Score')
     ax3.set_xlabel('Grade Level')
-    ax3.grid(axis='y', alpha=0.3)
+    ax3.grid(axis='y', linewidth=0.5)
     for bar, val in zip(bars3, avail_means):
         h = bar.get_height()
         ax3.text(bar.get_x() + bar.get_width()/2., (h + 1.0) if h > 0 else 1.0,
                  f'{val:.1f}', ha='center', va='bottom', fontsize=9)
     
     # Volatility
-    bars4 = ax4.bar(labels, vol_means, color='#9c27b0', alpha=0.8, edgecolor='black', linewidth=0.5)
+    bars4 = ax4.bar(labels, vol_means, color='#9c27b0', edgecolor='black', linewidth=0.5)
     ax4.set_title('Average Volatility by Grade', fontweight='bold')
     ax4.set_ylabel('Volatility Score')
     ax4.set_xlabel('Grade Level')
-    ax4.grid(axis='y', alpha=0.3)
+    ax4.grid(axis='y', linewidth=0.5)
     for bar, val in zip(bars4, vol_means):
         h = bar.get_height()
         ax4.text(bar.get_x() + bar.get_width()/2., (h + 1.0) if h > 0 else 1.0,
                  f'{val:.1f}', ha='center', va='bottom', fontsize=9)
     
-    plt.suptitle('Feature Analysis by Quality Grade', fontsize=16, fontweight='bold')
+    plt.suptitle('Feature Analysis by Quality Grade', fontsize=12, fontweight='bold')
     _save_fig(out_path)
 
 def fig_category_performance_comparison(master: Dict[str, Any], out_path: str) -> None:
@@ -347,20 +276,20 @@ def fig_category_performance_comparison(master: Dict[str, Any], out_path: str) -
     x = np.arange(len(categories))
     width = 0.25
     
-    plt.figure(figsize=(14, 8))
+    plt.figure(figsize=(6.89, 4.5))  # IET double column width
     bars1 = plt.bar(x - width, acc_means, width, label='Accuracy',
-                    color='#4caf50', alpha=0.8, edgecolor='black', linewidth=0.5)
+                    color='#4caf50', edgecolor='black', linewidth=0.5)
     bars2 = plt.bar(x, rt_means, width, label='Response Time',
-                    color='#ff9800', alpha=0.8, edgecolor='black', linewidth=0.5)
+                    color='#ff9800', edgecolor='black', linewidth=0.5)
     bars3 = plt.bar(x + width, avail_means, width, label='Availability',
-                    color='#2196f3', alpha=0.8, edgecolor='black', linewidth=0.5)
+                    color='#2196f3', edgecolor='black', linewidth=0.5)
     
     plt.xlabel('Data Source Category', fontsize=12)
     plt.ylabel('Average Score', fontsize=12)
-    plt.title('Performance Comparison Across Data Source Categories', fontsize=14, fontweight='bold')
-    plt.xticks(x, [cat.replace('_', ' ').title() for cat in categories], rotation=45, ha='right')
+    plt.title('Performance Comparison Across Data Source Categories', fontsize=12, fontweight='bold')
+    plt.xticks(x, [f'Category {i+1}' for i in range(len(categories))], rotation=45, ha='right')
     plt.legend()
-    plt.grid(axis='y', alpha=0.3)
+    plt.grid(axis='y', linewidth=0.5)
     
     # Add value labels
     for bars in [bars1, bars2, bars3]:
@@ -382,12 +311,12 @@ def fig_blocks_and_proposals(chain_doc: Dict[str, Any], out_dir: str) -> None:
     indices = [b.get('index', i) for i, b in enumerate(blocks)]
     
     # 1) Block generation timeline
-    plt.figure(figsize=(8,5))
+    plt.figure(figsize=(3.46, 3.0))
     plt.plot(indices, timestamps, marker='o', color='#4c6ef5', linewidth=2, markersize=4)
     plt.xlabel('Block Height', fontsize=12)
     plt.ylabel('Timestamp', fontsize=12)
-    plt.title('Block Generation Timeline', fontsize=14, fontweight='bold')
-    plt.grid(True, alpha=0.3)
+    plt.title('Block Generation Timeline', fontsize=12, fontweight='bold')
+    plt.grid(True, linewidth=0.5)
     _save_fig(os.path.join(out_dir, 'blocks_time_series.svg'))
     
     # 2) Proposal type distribution
@@ -401,12 +330,12 @@ def fig_blocks_and_proposals(chain_doc: Dict[str, Any], out_dir: str) -> None:
         kinds = list(kind_cnt.keys())
         vals = [kind_cnt[k] for k in kinds]
         
-        plt.figure(figsize=(8,5))
-        bars = plt.bar(kinds, vals, color='#9775fa', alpha=0.8, edgecolor='black', linewidth=0.5)
+        plt.figure(figsize=(3.46, 3.0))
+        bars = plt.bar(kinds, vals, color='#9775fa', edgecolor='black', linewidth=0.5)
         plt.xlabel('Proposal Type', fontsize=12)
         plt.ylabel('Count', fontsize=12)
-        plt.title('Proposal Types Distribution', fontsize=14, fontweight='bold')
-        plt.grid(axis='y', alpha=0.3)
+        plt.title('Proposal Types Distribution', fontsize=12, fontweight='bold')
+        plt.grid(axis='y', linewidth=0.5)
         
         # Add count labels
         for bar, count in zip(bars, vals):
@@ -434,7 +363,7 @@ def fig_block_throughput_and_proposal_latency(chain_doc: Dict[str, Any], out_dir
                 intervals.append(interval)
     
     if intervals:
-        plt.figure(figsize=(12, 5))
+        plt.figure(figsize=(6.89, 4.5))
         
         # Block throughput (blocks per time unit)
         throughput = [1.0 / interval for interval in intervals]
@@ -445,7 +374,7 @@ def fig_block_throughput_and_proposal_latency(chain_doc: Dict[str, Any], out_dir
         plt.xlabel('Block Height', fontsize=12)
         plt.ylabel('Blocks per Second', fontsize=12)
         plt.title('Block Generation Throughput', fontsize=12, fontweight='bold')
-        plt.grid(True, alpha=0.3)
+        plt.grid(True, linewidth=0.5)
         
         # Average interval (latency proxy)
         plt.subplot(1, 2, 2)
@@ -453,26 +382,26 @@ def fig_block_throughput_and_proposal_latency(chain_doc: Dict[str, Any], out_dir
         plt.xlabel('Block Height', fontsize=12)
         plt.ylabel('Block Interval (seconds)', fontsize=12)
         plt.title('Block Generation Interval', fontsize=12, fontweight='bold')
-        plt.grid(True, alpha=0.3)
+        plt.grid(True, linewidth=0.5)
         
         plt.tight_layout()
         _save_fig(os.path.join(out_dir, 'block_throughput_latency.svg'))
         
         # Additional throughput statistics
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(6.89, 5.5))
         plt.subplot(2, 2, 1)
-        plt.hist(throughput, bins=15, alpha=0.7, color='#26a69a', edgecolor='black')
+        plt.hist(throughput, bins=15, color='#26a69a', edgecolor='black')
         plt.xlabel('Throughput (blocks/sec)', fontsize=10)
         plt.ylabel('Frequency', fontsize=10)
         plt.title('Throughput Distribution', fontsize=11, fontweight='bold')
-        plt.grid(axis='y', alpha=0.3)
+        plt.grid(axis='y', linewidth=0.5)
         
         plt.subplot(2, 2, 2)
-        plt.hist(intervals, bins=15, alpha=0.7, color='#ff7043', edgecolor='black')
+        plt.hist(intervals, bins=15, color='#ff7043', edgecolor='black')
         plt.xlabel('Block Interval (sec)', fontsize=10)
         plt.ylabel('Frequency', fontsize=10)
         plt.title('Interval Distribution', fontsize=11, fontweight='bold')
-        plt.grid(axis='y', alpha=0.3)
+        plt.grid(axis='y', linewidth=0.5)
         
         # Moving averages
         window = min(5, len(throughput))
@@ -485,7 +414,7 @@ def fig_block_throughput_and_proposal_latency(chain_doc: Dict[str, Any], out_dir
             plt.xlabel('Block Height', fontsize=10)
             plt.ylabel('Avg Throughput', fontsize=10)
             plt.title('Moving Average Throughput', fontsize=11, fontweight='bold')
-            plt.grid(True, alpha=0.3)
+            plt.grid(True, linewidth=0.5)
             plt.legend()
             
             plt.subplot(2, 2, 4)
@@ -493,10 +422,10 @@ def fig_block_throughput_and_proposal_latency(chain_doc: Dict[str, Any], out_dir
             plt.xlabel('Block Height', fontsize=10)
             plt.ylabel('Avg Interval (sec)', fontsize=10)
             plt.title('Moving Average Interval', fontsize=11, fontweight='bold')
-            plt.grid(True, alpha=0.3)
+            plt.grid(True, linewidth=0.5)
             plt.legend()
         
-        plt.suptitle('Blockchain Throughput and Latency Metrics', fontsize=14, fontweight='bold')
+        plt.suptitle('Blockchain Throughput and Latency Metrics', fontsize=12, fontweight='bold')
         plt.tight_layout()
         _save_fig(os.path.join(out_dir, 'throughput_latency_detailed.svg'))
 
@@ -524,13 +453,13 @@ def fig_feature_correlation_heatmap(master: Dict[str, Any], out_path: str) -> No
     feature_names = ['Accuracy', 'Availability', 'Response Time', 'Volatility', 'Update Freq', 'Integrity', 'Error Rate', 'Historical']
     corr_matrix = np.corrcoef(np.array(features_data).T)
     
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(6.89, 4.5))
     im = plt.imshow(corr_matrix, cmap='coolwarm', aspect='auto', vmin=-1, vmax=1)
     plt.colorbar(im, label='Correlation Coefficient')
     
     plt.xticks(range(len(feature_names)), feature_names, rotation=45, ha='right')
     plt.yticks(range(len(feature_names)), feature_names)
-    plt.title('Feature Correlation Matrix', fontsize=14, fontweight='bold')
+    plt.title('Feature Correlation Matrix', fontsize=12, fontweight='bold')
     
     # Add correlation values
     for i in range(len(feature_names)):
@@ -570,21 +499,21 @@ def fig_response_time_accuracy_analysis(master: Dict[str, Any], out_dir: str) ->
         return
     
     # 1. Overall histograms
-    plt.figure(figsize=(12, 5))
+    plt.figure(figsize=(6.89, 3.5))
     
     plt.subplot(1, 2, 1)
-    plt.hist(all_accuracy, bins=20, alpha=0.7, color='#4caf50', edgecolor='black')
+    plt.hist(all_accuracy, bins=20, color='#4caf50', edgecolor='black')
     plt.xlabel('Accuracy Score', fontsize=12)
     plt.ylabel('Frequency', fontsize=12)
     plt.title('Overall Accuracy Distribution', fontsize=12, fontweight='bold')
-    plt.grid(axis='y', alpha=0.3)
+    plt.grid(axis='y', linewidth=0.5)
     
     plt.subplot(1, 2, 2)
-    plt.hist(all_response_time, bins=20, alpha=0.7, color='#ff9800', edgecolor='black')
+    plt.hist(all_response_time, bins=20, color='#ff9800', edgecolor='black')
     plt.xlabel('Response Time Score', fontsize=12)
     plt.ylabel('Frequency', fontsize=12)
     plt.title('Overall Response Time Distribution', fontsize=12, fontweight='bold')
-    plt.grid(axis='y', alpha=0.3)
+    plt.grid(axis='y', linewidth=0.5)
     
     plt.tight_layout()
     _save_fig(os.path.join(out_dir, 'accuracy_responsetime_histograms_overall.png'))
@@ -598,35 +527,33 @@ def fig_response_time_accuracy_analysis(master: Dict[str, Any], out_dir: str) ->
         rt_data = [by_grade[g]['response_time'] for g in grades if by_grade[g]['response_time']]
         
         if acc_data and rt_data:
-            plt.figure(figsize=(12, 5))
+            plt.figure(figsize=(6.89, 3.5))
             
             plt.subplot(1, 2, 1)
             box1 = plt.boxplot(acc_data, tick_labels=[g for g in grades if by_grade[g]['accuracy']], 
                               patch_artist=True)
             for patch in box1['boxes']:
                 patch.set_facecolor('#4caf50')
-                patch.set_alpha(0.7)
             plt.xlabel('Grade Level', fontsize=12)
             plt.ylabel('Accuracy Score', fontsize=12)
             plt.title('Accuracy Distribution by Grade', fontsize=12, fontweight='bold')
-            plt.grid(axis='y', alpha=0.3)
+            plt.grid(axis='y', linewidth=0.5)
             
             plt.subplot(1, 2, 2)
             box2 = plt.boxplot(rt_data, tick_labels=[g for g in grades if by_grade[g]['response_time']], 
                               patch_artist=True)
             for patch in box2['boxes']:
                 patch.set_facecolor('#ff9800')
-                patch.set_alpha(0.7)
             plt.xlabel('Grade Level', fontsize=12)
             plt.ylabel('Response Time Score', fontsize=12)
             plt.title('Response Time Distribution by Grade', fontsize=12, fontweight='bold')
-            plt.grid(axis='y', alpha=0.3)
+            plt.grid(axis='y', linewidth=0.5)
             
             plt.tight_layout()
             _save_fig(os.path.join(out_dir, 'accuracy_responsetime_boxplots_by_grade.png'))
     
     # 3. Scatter plot: Accuracy vs Response Time
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(6.89, 4.5))  # IET double column width
     colors = []
     for source_id, meta in sources.items():
         grade = meta.get('label', 'D')
@@ -641,11 +568,11 @@ def fig_response_time_accuracy_analysis(master: Dict[str, Any], out_dir: str) ->
         else:  # D
             colors.append('#f44336')
     
-    plt.scatter(all_accuracy, all_response_time, c=colors, alpha=0.7, s=50, edgecolors='black', linewidth=0.5)
+    plt.scatter(all_accuracy, all_response_time, c=colors, s=50, edgecolors='black', linewidth=0.5)
     plt.xlabel('Accuracy Score', fontsize=12)
     plt.ylabel('Response Time Score', fontsize=12)
-    plt.title('Accuracy vs Response Time Correlation', fontsize=14, fontweight='bold')
-    plt.grid(True, alpha=0.3)
+    plt.title('Accuracy vs Response Time Correlation', fontsize=12, fontweight='bold')
+    plt.grid(True, linewidth=0.5)
     
     # Add grade legend
     grade_colors = {'A+': '#4caf50', 'A': '#8bc34a', 'B': '#ffc107', 'C': '#ff9800', 'D': '#f44336'}
@@ -663,14 +590,14 @@ def fig_response_time_accuracy_analysis(master: Dict[str, Any], out_dir: str) ->
     if len(by_category) > 1:
         # Prepare data
         categories = sorted(by_category.keys())
-        display_names = [c.replace('_', ' ').title() for c in categories]
+        idx_map = {c: i for i, c in enumerate(categories)}
         acc_cat_data = [by_category[c]['accuracy'] for c in categories if by_category[c]['accuracy']]
         rt_cat_data = [by_category[c]['response_time'] for c in categories if by_category[c]['response_time']]
-        display_names_acc = [c.replace('_', ' ').title() for c in categories if by_category[c]['accuracy']]
-        display_names_rt = [c.replace('_', ' ').title() for c in categories if by_category[c]['response_time']]
+        display_names_acc = [f'Category {idx_map[c]+1}' for c in categories if by_category[c]['accuracy']]
+        display_names_rt = [f'Category {idx_map[c]+1}' for c in categories if by_category[c]['response_time']]
     
         if acc_cat_data or rt_cat_data:
-            plt.figure(figsize=(14, 6))
+            plt.figure(figsize=(6.89, 4.5))
             
             # Accuracy boxplots by category
             plt.subplot(1, 2, 1)
@@ -678,12 +605,11 @@ def fig_response_time_accuracy_analysis(master: Dict[str, Any], out_dir: str) ->
                 box1 = plt.boxplot(acc_cat_data, tick_labels=display_names_acc, patch_artist=True)
                 for patch in box1['boxes']:
                     patch.set_facecolor('#4caf50')
-                    patch.set_alpha(0.7)
             plt.xticks(rotation=30, ha='right', fontsize=9)
             plt.xlabel('Category', fontsize=12)
             plt.ylabel('Accuracy Score', fontsize=12)
             plt.title('Accuracy Distribution by Category', fontsize=12, fontweight='bold')
-            plt.grid(axis='y', alpha=0.3)
+            plt.grid(axis='y', linewidth=0.5)
             
             # Response time boxplots by category
             plt.subplot(1, 2, 2)
@@ -691,13 +617,12 @@ def fig_response_time_accuracy_analysis(master: Dict[str, Any], out_dir: str) ->
                 box2 = plt.boxplot(rt_cat_data, tick_labels=display_names_rt, patch_artist=True)
                 for patch in box2['boxes']:
                     patch.set_facecolor('#ff9800')
-                    patch.set_alpha(0.7)
             plt.xticks(rotation=30, ha='right', fontsize=9)
             plt.xlabel('Category', fontsize=12)
             plt.ylabel('Response Time Score', fontsize=12)
             plt.title('Response Time Distribution by Category', fontsize=12, fontweight='bold')
-            plt.grid(axis='y', alpha=0.3)
-            
+            plt.grid(axis='y', linewidth=0.5)
+
             plt.tight_layout()
             _save_fig(os.path.join(out_dir, 'accuracy_responsetime_by_category_boxplots.png'))
 
@@ -719,10 +644,10 @@ def fig_category_distribution(master: Dict[str, Any], out_path: str) -> None:
     # Generate distinct colors for each category
     colors = plt.cm.Set3(np.linspace(0, 1, len(categories)))
     
-    plt.figure(figsize=(10, 8))
+    plt.figure(figsize=(3.46, 3.5))
     wedges, texts, autotexts = plt.pie(
         counts,
-        labels=[cat.replace('_', ' ').title() for cat in categories],
+        labels=[f'Category {i+1}' for i, _ in enumerate(categories)],
         colors=colors,
         autopct='%1.1f%%',
         startangle=90,
@@ -739,7 +664,7 @@ def fig_category_distribution(master: Dict[str, Any], out_path: str) -> None:
         text.set_fontsize(10)
         text.set_fontweight('bold')
     
-    plt.title('Data Source Category Distribution', fontsize=14, fontweight='bold')
+    plt.title('Data Source Category Distribution', fontsize=12, fontweight='bold')
     plt.axis('equal')
     _save_fig(out_path)
 
@@ -778,7 +703,7 @@ def fig_experiment_summary_table(master: Dict[str, Any], out_path: str) -> None:
         grade_stats[grade]['error_rate'].append(float(features.get('error_rate', 0.0)))
     
     # Create summary table figure with wider size to accommodate all columns
-    fig, ax = plt.subplots(figsize=(18, 8))
+    fig, ax = plt.subplots(figsize=(6.89, 4.5))  # IET double column width
     ax.axis('tight')
     ax.axis('off')
     
@@ -827,24 +752,24 @@ def fig_experiment_summary_table(master: Dict[str, Any], out_path: str) -> None:
         table_data.append([
             grade,
             f'{count}',
-            f'{proportion:.1f}%',
-            f'{acc_mean:.3f}±{acc_std:.3f}',
-            f'{rt_mean:.3f}±{rt_std:.3f}',
-            f'{avail_mean:.3f}±{avail_std:.3f}',
-            f'{vol_mean:.3f}±{vol_std:.3f}',
-            f'{quality_mean:.3f}±{quality_std:.3f}'
+            f'{proportion:.1f}%'
+            , f'{acc_mean:.3f}±{acc_std:.3f}'
+            , f'{rt_mean:.3f}±{rt_std:.3f}'
+            , f'{avail_mean:.3f}±{avail_std:.3f}'
+            , f'{vol_mean:.3f}±{vol_std:.3f}'
+            , f'{quality_mean:.3f}±{quality_std:.3f}'
         ])
     
     # Create table with better column width distribution
     table = ax.table(cellText=table_data, colLabels=headers, cellLoc='center', loc='center')
     table.auto_set_font_size(False)
-    table.set_fontsize(9)  # Slightly smaller font to fit more content
-    table.scale(1.0, 1.8)  # Reduce horizontal scaling to fit all columns
+    table.set_fontsize(8)  # 8pt inside table to fit double-column width
+    table.scale(1.0, 1.4)  # Fit within 6.89in width and keep readability
     
     # Manually adjust column widths to ensure all columns are visible
     cellDict = table.get_celld()
     num_cols = len(headers)
-    col_widths = [0.08, 0.08, 0.12, 0.15, 0.15, 0.15, 0.15, 0.15]  # Sum = 1.03, balanced
+    col_widths = [0.09, 0.08, 0.12, 0.15, 0.15, 0.14, 0.13, 0.14]  # sum ~1.0 balanced for 6.89in
     
     for i in range(len(table_data) + 1):  # Include header row
         for j in range(num_cols):
@@ -874,39 +799,37 @@ def fig_experiment_summary_table(master: Dict[str, Any], out_path: str) -> None:
     plt.title('Experimental Results Summary: Data Source Quality Assessment\n' +
               f'Total Sources: {total_sources} | Categories: {len(categories)} | ' +
               f'Clustering Algorithm: K-means (K=5)', 
-              fontsize=14, fontweight='bold', pad=20)
+              fontsize=12, fontweight='bold', pad=12)
     
     # Add methodology note
     note_text = ('Note: Quality grades assigned through unsupervised K-means clustering based on '
                 'multi-dimensional feature analysis (accuracy, response time, availability, volatility, etc.). '
                 'Quality Score = 0.3×Accuracy + 0.25×Availability + 0.2×ResponseTime + 0.15×Volatility + 0.1×Integrity')
-    plt.figtext(0.1, 0.02, note_text, fontsize=9, style='italic', wrap=True)
+    plt.figtext(0.05, 0.02, note_text, fontsize=8, style='italic', wrap=True)
     
     _save_fig(out_path)
 
 def fig_clustering_validation_metrics(master: Dict[str, Any], out_path: str) -> None:
-    """Generate clustering validation metrics visualization for academic evaluation"""
+    """Generate KNN-based validation metrics visualization (classification)"""
     sources = master.get('sources', {}) or {}
     
     if not sources:
         return
     
-    # Extract features for clustering analysis
+    # Extract feature matrix X and labels y
     feature_matrix = []
     labels = []
-    
     for source_id, meta in sources.items():
-        features = meta.get('features', {}) or {}
+        feats = meta.get('features', {}) or {}
         grade = meta.get('label', 'D')
-        
         feature_vector = [
-            float(features.get('accuracy', 0.0)),
-            float(features.get('response_time', 0.0)),
-            float(features.get('availability', 0.0)),
-            float(features.get('volatility', 0.0)),
-            float(features.get('update_frequency', 0.0)),
-            float(features.get('integrity', 0.0)),
-            float(features.get('error_rate', 0.0))
+            float(feats.get('accuracy', 0.0)),
+            float(feats.get('response_time', 0.0)),
+            float(feats.get('availability', 0.0)),
+            float(feats.get('volatility', 0.0)),
+            float(feats.get('update_frequency', 0.0)),
+            float(feats.get('integrity', 0.0)),
+            float(feats.get('error_rate', 0.0))
         ]
         feature_matrix.append(feature_vector)
         labels.append(grade)
@@ -914,109 +837,137 @@ def fig_clustering_validation_metrics(master: Dict[str, Any], out_path: str) -> 
     if len(feature_matrix) < 2:
         return
     
-    feature_matrix = np.array(feature_matrix)
-    
-    # Calculate clustering quality metrics (optional dependency)
+    X = np.array(feature_matrix, dtype=float)
     try:
-        from sklearn.metrics import silhouette_score, calinski_harabasz_score
-        from sklearn.preprocessing import LabelEncoder
-        sklearn_available = True
-    except ImportError as e:
-        print(f"⚠️ scikit-learn not available, using simplified clustering validation metrics: {e}")
-        sklearn_available = False
+        from sklearn.model_selection import StratifiedKFold, cross_val_score, cross_val_predict
+        from sklearn.preprocessing import StandardScaler, LabelEncoder
+        from sklearn.pipeline import Pipeline
+        from sklearn.neighbors import KNeighborsClassifier
+        from sklearn.metrics import confusion_matrix, precision_recall_fscore_support
     except Exception as e:
-        print(f"⚠️ Error importing scikit-learn, using simplified metrics: {e}")
-        sklearn_available = False
+        print(f"⚠️ scikit-learn not available for KNN evaluation: {e}")
+        return
     
-    # Calculate metrics
-    if sklearn_available:
-        try:
-            # Convert grade labels to numeric for silhouette analysis
-            le = LabelEncoder()
-            numeric_labels = le.fit_transform(labels)
-            silhouette_avg = silhouette_score(feature_matrix, numeric_labels)
-            calinski_harabasz = calinski_harabasz_score(feature_matrix, numeric_labels)
-        except Exception as e:
-            print(f"Warning: Error calculating clustering metrics: {e}")
-            silhouette_avg = 0.5  # Default reasonable value
-            calinski_harabasz = 100.0  # Default reasonable value
-    else:
-        # Simplified metrics calculation without sklearn
-        silhouette_avg = 0.6  # Reasonable default for demonstration
-        calinski_harabasz = 150.0  # Reasonable default for demonstration
-        print("Using simplified clustering validation metrics (sklearn not available)")
+    # Encode labels and build KNN pipeline (distance-weighted, scaled features)
+    le = LabelEncoder()
+    y = le.fit_transform(labels)
+    classes = list(le.classes_)
     
-    # Create visualization
-    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 10))
+    knn_pipeline = Pipeline([
+        ("scaler", StandardScaler()),
+        ("clf", KNeighborsClassifier(n_neighbors=5, weights='distance', p=2))
+    ])
     
-    # 1. Grade distribution pie chart
-    grade_counts = defaultdict(int)
-    for label in labels:
-        grade_counts[label] += 1
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+    acc_scores = cross_val_score(knn_pipeline, X, y, cv=skf, scoring='accuracy')
+    f1_scores = cross_val_score(knn_pipeline, X, y, cv=skf, scoring='f1_macro')
+    y_pred = cross_val_predict(knn_pipeline, X, y, cv=skf)
     
-    grade_order = ['A+', 'A', 'B', 'C', 'D']
-    grades = [g for g in grade_order if g in grade_counts]
-    counts = [grade_counts[g] for g in grades]
+    # Confusion matrix (normalized by true class counts)
+    cm = confusion_matrix(y, y_pred, labels=list(range(len(classes))))
+    with np.errstate(invalid='ignore', divide='ignore'):
+        cm_norm = cm / cm.sum(axis=1, keepdims=True)
+        cm_norm = np.nan_to_num(cm_norm)
+
+    # Determine desired class order A+ > A > B > C > D (only those present)
+    desired_order = ['A+', 'A', 'B', 'C', 'D']
+    ordered_classes = [g for g in desired_order if g in classes] or classes
+    order_idx = [classes.index(g) for g in ordered_classes]
+    # Reorder confusion matrix and per-class scores to the desired order
+    cm_norm_ordered = cm_norm[order_idx][:, order_idx]
+
+    # Per-class F1 (reordered)
+    _, _, f1_per_class, _ = precision_recall_fscore_support(
+        y, y_pred, labels=list(range(len(classes))), zero_division=0
+    )
+    f1_per_class_ordered = [f1_per_class[i] for i in order_idx]
+    
+    # Plot: 2x2 for distribution, metrics, confusion matrix, per-class F1
+    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(6.89, 4.5))
+    
+    # 1) Grade distribution
+    counts_map = defaultdict(int)
+    for g in labels:
+        counts_map[g] += 1
+    grades = [g for g in ['A+', 'A', 'B', 'C', 'D'] if g in counts_map] or classes
+    counts = [counts_map[g] for g in grades]
     colors = ['#4caf50', '#8bc34a', '#ffc107', '#ff9800', '#f44336'][:len(grades)]
-    
     ax1.pie(counts, labels=grades, colors=colors, autopct='%1.1f%%', startangle=90)
-    ax1.set_title('Cluster Distribution', fontweight='bold')
+    ax1.set_title('Grade Distribution', fontweight='bold')
     
-    # 2. Silhouette analysis
-    ax2.bar(['Silhouette Score'], [silhouette_avg], color='#2196f3', alpha=0.8)
-    ax2.set_ylabel('Silhouette Score')
-    ax2.set_title('Clustering Quality Metrics', fontweight='bold')
-    ax2.set_ylim(0, 1)
-    ax2.grid(axis='y', alpha=0.3)
-    ax2.text(0, silhouette_avg + 0.05, f'{silhouette_avg:.3f}', ha='center', fontweight='bold')
+    # 2) CV metrics (Accuracy & Macro-F1)
+    ax2.set_title('KNN Cross-Validated Performance (CV-5)', fontweight='bold')
+    ax2.axis('off')
+    acc_mean, acc_std = float(np.mean(acc_scores)), float(np.std(acc_scores))
+    f1_mean, f1_std = float(np.mean(f1_scores)), float(np.std(f1_scores))
+    box1 = dict(boxstyle='round,pad=0.6', facecolor='#e3f2fd', edgecolor='#2196f3', linewidth=2)
+    box2 = dict(boxstyle='round,pad=0.6', facecolor='#fff3e0', edgecolor='#fb8c00', linewidth=2)
+    ax2.text(0.5, 0.65, 'Accuracy', ha='center', va='center', fontsize=12, color='#1565c0', transform=ax2.transAxes)
+    ax2.text(0.5, 0.40, f'{acc_mean:.3f} ± {acc_std:.3f}', ha='center', va='center', fontsize=12, fontweight='bold',
+             bbox=box1, color='#0d47a1', transform=ax2.transAxes)
+    ax2.text(0.5, 0.22, 'Macro-F1', ha='center', va='center', fontsize=12, color='#e65100', transform=ax2.transAxes)
+    ax2.text(0.5, 0.05, f'{f1_mean:.3f} ± {f1_std:.3f}', ha='center', va='center', fontsize=12, fontweight='bold',
+             bbox=box2, color='#bf360c', transform=ax2.transAxes)
     
-    # 3. Calinski-Harabasz Index
-    ax3.bar(['Calinski-Harabasz Index'], [calinski_harabasz], color='#ff9800', alpha=0.8)
-    ax3.set_ylabel('C-H Index')
-    ax3.set_title('Cluster Separation Quality', fontweight='bold')
-    ax3.grid(axis='y', alpha=0.3)
-    ax3.text(0, calinski_harabasz + calinski_harabasz*0.05, f'{calinski_harabasz:.1f}', 
-             ha='center', fontweight='bold')
+    # 3) Confusion matrix
+    im = ax3.imshow(cm_norm, cmap='Blues', vmin=0, vmax=1, aspect='auto')
+    ax3.set_title('Confusion Matrix (Normalized)', fontweight='bold')
+    ax3.set_xticks(range(len(classes)))
+    ax3.set_yticks(range(len(classes)))
+    ax3.set_xticklabels(classes, rotation=45, ha='right')
+    ax3.set_yticklabels(classes)
+    for i in range(len(ordered_classes)):
+        for j in range(len(ordered_classes)):
+            ax3.text(j, i, f"{cm_norm_ordered[i, j]*100:.0f}%", ha='center', va='center', fontsize=9,
+                     color='#0d47a1' if cm_norm_ordered[i, j] > 0.5 else '#333')
+    fig.colorbar(im, ax=ax3, fraction=0.046, pad=0.04, label='Proportion')
     
-    # 4. Feature importance in clustering
-    feature_names = ['Accuracy', 'Response Time', 'Availability', 'Volatility', 
-                     'Update Freq', 'Integrity', 'Error Rate']
-    feature_std = np.std(feature_matrix, axis=0)
+    # 4) Per-class F1
+    ax4.barh(classes, f1_per_class, color='#9c27b0')
+    ax4.set_xlim(0.0, 1.0)
+    ax4.set_xlabel('F1 Score')
+    ax4.set_title('Per-class F1 (CV-5)', fontweight='bold')
     
-    ax4.barh(feature_names, feature_std, color='#9c27b0', alpha=0.8)
-    ax4.set_xlabel('Standard Deviation')
-    ax4.set_title('Feature Variability Contribution', fontweight='bold')
-    ax4.grid(axis='x', alpha=0.3)
-    
-    plt.suptitle('Clustering Validation and Quality Assessment\n' +
-                f'K-means Algorithm Performance Evaluation', 
-                fontsize=14, fontweight='bold')
+    plt.suptitle('KNN Classification Validation and Quality Assessment\n(k=5, distance-weighted, standardized features)', fontsize=10, fontweight='bold')
     plt.tight_layout()
     
-    # Add interpretation text
-    interpretation = (f'Silhouette Score: {silhouette_avg:.3f} (Range: -1 to 1, higher is better)\n'
-                     f'Calinski-Harabasz Index: {calinski_harabasz:.1f} (Higher values indicate better separation)\n'
-                     f'Total Clusters: {len(set(labels))} | Total Data Points: {len(labels)}')
+    # Interpretation footer
+    interpretation = (
+        f'Accuracy (mean±std): {acc_mean:.3f}±{acc_std:.3f} | '
+        f'Macro-F1 (mean±std): {f1_mean:.3f}±{f1_std:.3f} | '
+        f'Classes: {len(classes)} | Samples: {len(labels)}'
+    )
     plt.figtext(0.1, 0.02, interpretation, fontsize=10, style='italic')
     
     _save_fig(out_path)
 
 def main():
-    """Generate all visualization reports"""
-    # Set matplotlib font to handle potential encoding issues; avoid missing Liberation Sans warnings
+    """Generate all visualization reports with IET journal template compliance"""
+    # IET Research Journals formatting standards
     plt.rcParams.update({
-        'font.family': ['DejaVu Sans', 'Arial', 'Helvetica', 'sans-serif'],
+        'font.family': ['Times New Roman', 'serif'],
+        'font.size': 10,          # IET minimum font size
+        'font.weight': 'normal',  # unify default text weight
+        'axes.titlesize': 12,
+        'axes.titleweight': 'bold',
+        'axes.labelsize': 10,
+        'axes.labelweight': 'normal',
+        'xtick.labelsize': 9,
+        'ytick.labelsize': 9,
+        'legend.fontsize': 9,
+        'legend.title_fontsize': 10,
         'figure.dpi': 100,
-        'savefig.dpi': 600,
-        'savefig.format': 'png',
+        'savefig.dpi': 600,       # Exceeds IET minimum 300 DPI
+        'savefig.format': 'eps',  # IET preferred format
         'savefig.bbox': 'tight',
         'savefig.facecolor': 'white',
         'savefig.edgecolor': 'none',
         'axes.linewidth': 0.8,
         'axes.spines.top': False,
         'axes.spines.right': False,
-        'grid.alpha': 0.3,
-        'grid.linewidth': 0.5
+        'grid.linewidth': 0.5,
+        'mathtext.fontset': 'stix',
+        'lines.linewidth': 1.0
     })
     
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -1088,7 +1039,7 @@ def main():
     print("  • Statistical feature analysis across quality grades")
     print("  • Response time and accuracy distribution analysis")
     print("  • Block generation throughput and latency metrics")
-    print("  • Grade distribution and ranking visualizations")
+    print("  • Grade distribution visualizations")
     print("\n📝 All figures saved in EPS (vector), PNG (600 DPI), and SVG formats")
     print("   as required by IET journal submission guidelines.")
 
